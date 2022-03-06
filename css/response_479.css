@@ -1,0 +1,144 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo,
+    header .logo img
+    {
+        height: 30px;
+    }
+
+
+    header .info .links > * + *
+    {
+        margin-left: 24px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product
+    {
+        padding: 15px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .buy_info
+    {
+        padding-left: 80px;
+    }
+
+
+
+    /*----------------------
+        Product features
+    ----------------------*/
+    .product_features .item .name
+    {
+        width: calc(35% - 12px);
+    }
+
+    .product_features .item .val
+    {
+        width: 65%;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .sort .name
+    {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+
+    .reviews .sort .btn
+    {
+        margin-left: 0;
+    }
+
+    .reviews .sort .btn + .btn
+    {
+        margin-left: 16px;
+    }
+
+
+    .reviews .rating
+    {
+        padding: 23px;
+    }
+
+    .reviews .rating .stars .icon + .icon
+    {
+        margin-left: 4px;
+    }
+
+    .reviews .rating .value
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        position: relative;
+        top: 2px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .cont
+    {
+        justify-content: space-between;
+    }
+
+
+    footer .links + .links
+    {
+        margin-left: 0;
+    }
+}
