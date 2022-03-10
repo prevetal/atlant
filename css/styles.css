@@ -2196,7 +2196,8 @@ header .info .links .cart_link .icon svg
     flex-wrap: wrap;
 }
 
-.product_features .item + .item
+.product_features .item + .item,
+.product_features .hide
 {
     margin-top: 10px;
 }
