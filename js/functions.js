@@ -19,6 +19,22 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
+
+	// Подсчёт символов в поле ввода
+	$('.form .limit').keydown(function () {
+		let _self = $(this),
+			parent = $(this).closest('.field')
+
+		setTimeout(() => {
+			parent.find('.count .current').text(_self.val().length)
+		})
+	})
+
+
+	// Кастомный select
+	$('select').niceSelect()
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.dragToClose = false
@@ -28,6 +44,22 @@ $(() => {
 		PREV: "Предыдущий",
 		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
 	}
+
+	Fancybox.defaults.template = {
+		closeButton: '<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>',
+	}
+
+	// Всплывающие окна
+	$('body').on('click', '.modal_btn', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+	})
 
 	// Увеличение картинки
 	Fancybox.bind('.fancy_img', {
@@ -76,6 +108,42 @@ $(() => {
 			if (_self.val() > maximum) _self.val(maximum)
 		})
 	})
+
+
+	// Табы
+	var locationHash = window.location.hash
+
+	$('body').on('click', '.tabs button', function (e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
+
+			$parent.find('.tabs:first button').removeClass('active')
+			$parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			$activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
+			$activeTabContent = $(locationHash),
+			$parent = $activeTab.closest('.tabs_container'),
+			level = $activeTab.data('level')
+
+		$parent.find('.tabs:first button').removeClass('active')
+		$parent.find('.tab_content.' + level).removeClass('active')
+
+		$activeTab.addClass('active')
+		$activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
+	}
 
 
 	// Моб. версия

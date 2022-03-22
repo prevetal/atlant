@@ -9,6 +9,22 @@
     }
 
 
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
 
     /*------------
         Header
@@ -62,6 +78,32 @@
     /*---------------
         Page head
     ---------------*/
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+    aside .mob_filter_btn
+    {
+        display: block;
+    }
+
+
+    aside .filter
+    {
+        display: none;
+
+        padding-top: 20px;
+    }
 
 
 
@@ -123,7 +165,7 @@
 
     .categories .row > * + *
     {
-        margin-left: 20px;
+        margin-left: 16px;
     }
 
 
@@ -227,7 +269,7 @@
         width: calc(100% - 101px);
     }
 
-    .product_info .images .big .slide a
+    .product_info .images .big .slide .btn
     {
         height: 537px;
     }
@@ -259,6 +301,35 @@
         margin-top: 24px;
 
         order: 2;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row,
+    .content .products .row
+    {
+        --products_count: 3;
+    }
+
+    .products .row > *,
+    .content .products .row > *
+    {
+        width: 33.333%;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head
+    {
+        padding: 0;
+
+        border: none;
     }
 
 

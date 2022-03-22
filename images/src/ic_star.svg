@@ -1,7 +1,1 @@
-<svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="15px" height="14px">
-<path fill-rule="evenodd"  fill="currentColor"
- d="M7.500,-0.001 L9.903,4.496 L15.008,5.346 L11.387,8.975 L12.140,13.996 L7.500,11.743 L2.859,13.996 L3.612,8.975 L-0.008,5.346 L5.097,4.496 L7.500,-0.001 Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.61 29.99"><path d="M16.68,0,21.9,9.64,33,11.46l-7.86,7.77L26.76,30,16.68,25.17,6.61,30,8.24,19.23.38,11.46,11.47,9.64Z" transform="translate(-0.38)" fill-rule="evenodd" fill="currentColor" /></svg>

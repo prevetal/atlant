@@ -30,6 +30,7 @@
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
 		<link rel="stylesheet" href="css/swiper.css" async>
 		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1147.css" media="print, (max-width: 1147px)" async>
@@ -77,12 +78,12 @@
 							</div>
 
 							<div class="links">
-								<div><a href="/" class="account_link link">
+								<div><button class="account_link link modal_btn" data-content="#login_modal">
 									<div class="icon">
 										<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
 									</div>
 									<span>Кабинет</span>
-								</a></div>
+								</button></div>
 
 								<div><a href="/" class="orders_link link">
 									<div class="icon">
@@ -2006,11 +2007,170 @@
 		</div>
 
 
+		<section class="modal tabs_container" id="login_modal">
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+			</div>
+
+			<div class="tabs">
+				<button data-content="#auth_tab1" data-level="level1" class="active">Авторизация</button>
+				<button data-content="#auth_tab2" data-level="level1">Регистрация</button>
+			</div>
+
+
+			<div class="tab_content level1 active" id="auth_tab1">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="E-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="Пароль">
+						</div>
+					</div>
+
+					<div class="line">
+						<button class="recovery_btn modal_btn" data-content="#recovery_modal">Забыли пароль?</button>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Войти</button>
+					</div>
+				</form>
+			</div>
+
+
+			<div class="tab_content level1" id="auth_tab2">
+				<div class="notice">Реализация товаров осуществляется исключительно оптом!<br> Розничных продаж нет!</div>
+
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<select name="">
+								<option value="1" selected data-display="Россия"></option>
+								<option value="2">Россия</option>
+								<option value="3">Вариант 2</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<select name="">
+								<option value="1" selected data-display="Форма организации"></option>
+								<option value="2">ИП с НДС</option>
+								<option value="3">Вариант 3</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="line">
+						Введите ИНН вашей организации.<br> Мы проверим его и автоматически заполним основные данные.
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input error" placeholder="ИНН">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Наименование компании">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="ФИО руководителя">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="E-mail">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Пароль">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Повторите пароль">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="checkbox" name="agree" id="register_agree_check">
+							<label for="register_agree_check">
+								<div class="check">
+									<img src="images/ic_check.svg" alt="">
+								</div>
+
+								<div>Нажимая на кнопку "Зарегистрироваться", я даю согласие на обработку персональных данных в соответствии с <a href="/" target="_blank">Политикой конфиденциальности</a> и <a href="/" target="_blank">Пользовательским соглашением и Согласием на обработку персональных данных</a>.</div>
+							</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Зарегистрироваться</button>
+
+						<div class="error_text">Заполните обязательные поля!</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="recovery_modal">
+			<div class="block_head">
+				<div class="title">Восстановление пароля</div>
+
+				<div class="desc">Укажите почту, чтобы получить ссылку для изменения пароля</div>
+			</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail">
+					</div>
+				</div>
+
+				<div class="line">
+					<button class="back_btn modal_btn" data-content="#login_modal">Вспомнил пароль</button>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Войти</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="error_search_modal">
+			<div class="block_head">
+				<div class="title">Не удалось произвести поиск по ИНН</div>
+
+				<div class="desc">ИНН не найден</div>
+			</div>
+		</section>
+
+
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

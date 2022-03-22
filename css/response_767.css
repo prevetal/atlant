@@ -5,7 +5,29 @@
     -------------------*/
     :root
     {
+        --font_size: 15px;
         --font_size_title: 22px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .go_to
+    {
+        width: 100%;
+        margin-top: 12px;
     }
 
 
@@ -63,6 +85,11 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .error_text
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
 
 
 
@@ -86,7 +113,25 @@
     /*--------------
         Products
     --------------*/
-    .products .product
+    .products .row,
+    .content .products .row
+    {
+        width: calc(100% + 20px);
+        margin-right: -10px;
+        margin-left: -10px;
+
+        --products_count: 2;
+    }
+
+    .products .row > *,
+    .content .products .row > *
+    {
+        width: 50%;
+    }
+
+
+    .products .product,
+    .products .row .product
     {
         padding: 10px;
     }
@@ -129,10 +174,13 @@
         width: 100%;
     }
 
-    .product_info .images .big .slide a
+    .product_info .images .big .slide .btn,
+    .product_info .images .big .slide div
     {
         height: auto;
         padding-bottom: 133.09%;
+
+        pointer-events: none;
     }
 
 
@@ -254,6 +302,29 @@
     .product_features .item .val
     {
         width: 67%;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head .pagination
+    {
+        display: none;
+    }
+
+
+    .products_head .sort
+    {
+        width: 100%;
+
+        flex-wrap: nowrap;
+    }
+
+    .products_head .sort .nice-select
+    {
+        width: 100%;
     }
 
 

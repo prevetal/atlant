@@ -9,6 +9,67 @@
     }
 
 
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .links a
+    {
+        width: 36px;
+    }
+
+
+    .pagination .go_to .field
+    {
+        width: 100%;
+
+        flex-wrap: nowrap;
+    }
+
+    .pagination .go_to .field .label
+    {
+        padding: 0 16px;
+    }
+
+    .pagination .go_to .field .input
+    {
+        width: 100%;
+    }
+
+    .pagination .go_to .submit_btn
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+
 
     /*------------
         Header
@@ -42,6 +103,17 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .line
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    .form .submit_btn
+    {
+        padding: 6px 20px;
+    }
 
 
 
@@ -140,5 +212,28 @@
     footer .links + .links
     {
         margin-left: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 24px;
+    }
+
+
+    .modal .logo
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .modal .notice
+    {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
