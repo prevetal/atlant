@@ -251,6 +251,115 @@
 
 
 
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .product .info
+    {
+        margin-left: 20px;
+        padding-top: 5px;
+    }
+
+
+    .cart_info .product .amount
+    {
+        width: 156px;
+        min-width: 156px;
+        margin-left: 20px;
+    }
+
+
+    .cart_info .product .amount .minimum
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+    .cart_info .bottom
+    {
+        padding: 19px 0 0;
+    }
+
+
+    .cart_info .delivery
+    {
+        width: calc(100% - 304px);
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .data
+    {
+        width: calc(100% - 362px);
+    }
+
+
+    .checkout_info .cart
+    {
+        margin-top: 24px;
+    }
+
+
+    .checkout_info .methods .btn
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+    .checkout_info .cart .product .info
+    {
+        margin: 0 24px;
+    }
+
+
+    .checkout_info .cart .product .add_message .btn
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+    .checkout_info .cart .product .buy
+    {
+        width: 124px;
+        min-width: 124px;
+    }
+
+
+    .checkout_info .col_right
+    {
+        width: 338px;
+    }
+
+
+    .checkout_info .totals_info .total_price .val
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .checkout_info .totals_info .prices > *
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .checkout_info .totals_info .info,
+    .checkout_info .totals_info .info > * + *
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

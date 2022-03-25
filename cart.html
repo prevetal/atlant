@@ -58,9 +58,9 @@
 
 					<div class="info">
 						<div class="cont row">
-							<div class="logo">
+							<a href="/" class="logo">
 								<img src="images/logo.png" alt="">
-							</div>
+							</a>
 
 							<a href="/" class="catalog_link">
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
@@ -95,6 +95,7 @@
 								<div><a href="/" class="cart_link link">
 									<div class="icon">
 										<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+										<div class="count">2</div>
 									</div>
 									<span>Корзина</span>
 								</a></div>
@@ -137,44 +138,169 @@
 				</header>
 
 
-				<section class="main_slider block">
+				<section class="page_head">
 					<div class="cont">
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="slide swiper-slide">
-									<div class="image">
-										<img data-src="images/tmp/main_slider_img.jpg" alt="" class="lozad">
+						<h1 class="page_title">Корзина <sup>3 товара</sup></h1>
+					</div>
+				</section>
+
+
+				<section class="cart_info block">
+					<div class="cont">
+						<div class="data">
+							<div class="select_all">
+								<input type="checkbox" name="select_all" id="select_all_check">
+								<label for="select_all_check">
+									<div class="check">
+										<img src="images/ic_check.svg" alt="">
+									</div>
+
+									<div>Выбрать все</div>
+								</label>
+							</div>
+
+							<div class="seller_name">Название продавца</div>
+
+							<div class="items">
+								<div class="product">
+									<div class="select">
+										<input type="checkbox" name="product" id="product_check1">
+										<label for="product_check1">
+											<div class="check">
+												<img src="images/ic_check.svg" alt="">
+											</div>
+										</label>
+									</div>
+
+									<a href="/" class="thumb" target="_blank">
+										<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad">
+									</a>
+
+									<div class="info">
+										<div class="name">
+											<a href="/">Леггинсы Giulia LEGGINGS, CC0000_0000</a>
+										</div>
+
+										<div class="options">
+											<div>Цвет: Чёрный</div>
+											<div>Размер: S</div>
+											<div>Доставка из: Россия</div>
+										</div>
+									</div>
+
+									<div class="price">
+										<div>2 500,00<span class="currency">a</span></div>
+
+										<div class="row">
+											<div class="old">4 950,50 <span class="currency">a</span></div>
+											<div class="discount">-10%</div>
+										</div>
+									</div>
+
+									<div class="amount">
+										<div>
+											<button type="button" class="minus"></button>
+
+											<input type="text" value="1" class="input"
+											data-minimum="5" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+											<button type="button" class="plus"></button>
+										</div>
+
+										<div class="minimum">Минимальное<br> кол-во для заказа: 5</div>
+									</div>
+
+									<div class="price total">
+										<div>7 500,00<span class="currency">c</span></div>
+									</div>
+
+									<div class="delete">
+										<button class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+										</button>
 									</div>
 								</div>
 
-								<div class="slide swiper-slide">
-									<div class="image">
-										<img data-src="images/tmp/main_slider_img.jpg" alt="" class="lozad">
-									</div>
-								</div>
 
-								<div class="slide swiper-slide">
-									<div class="image">
-										<img data-src="images/tmp/main_slider_img.jpg" alt="" class="lozad">
+								<div class="product">
+									<div class="select">
+										<input type="checkbox" name="product" id="product_check2">
+										<label for="product_check2">
+											<div class="check">
+												<img src="images/ic_check.svg" alt="">
+											</div>
+										</label>
 									</div>
-								</div>
 
-								<div class="slide swiper-slide">
-									<div class="image">
-										<img data-src="images/tmp/main_slider_img.jpg" alt="" class="lozad">
+									<a href="/" class="thumb" target="_blank">
+										<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad">
+									</a>
+
+									<div class="info">
+										<div class="name">
+											<a href="/">Леггинсы Giulia LEGGINGS, CC0000_0000</a>
+										</div>
+
+										<div class="options">
+											<div>Цвет: Чёрный</div>
+											<div>Размер: S</div>
+											<div>Доставка из: Россия</div>
+										</div>
+									</div>
+
+									<div class="price">
+										<div>2 500,00<span class="currency">a</span></div>
+
+										<div class="row">
+											<div class="old">4 950,50 <span class="currency">a</span></div>
+											<div class="discount">-10%</div>
+										</div>
+									</div>
+
+									<div class="amount">
+										<div>
+											<button type="button" class="minus"></button>
+
+											<input type="text" value="1" class="input"
+											data-minimum="5" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+											<button type="button" class="plus"></button>
+										</div>
+
+										<div class="minimum red">Минимальное<br> кол-во для заказа: 5</div>
+									</div>
+
+									<div class="price total">
+										<div>7 500,00<span class="currency">c</span></div>
+									</div>
+
+									<div class="delete">
+										<button class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+										</button>
 									</div>
 								</div>
 							</div>
 
-							<div class="swiper-button-prev">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
-							</div>
+							<div class="bottom">
+								<div class="delivery">
+									<div class="for_free">До <b>бесплатной доставки</b> необходимо добрать товара на сумму: <b>61 255,00</b><span class="currency">a</span></div>
 
-							<div class="swiper-button-next">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
-							</div>
+									<div class="exp">Важно! Предложение действительно для доставки ТК "Деловые линии" для Центрального, Южного, Северо-Западного, Северо-Кавказского и Приволжского округов, а также для Республики Крым.</div>
 
-							<div class="swiper-pagination"></div>
+									<div class="link">
+										<a href="/">Подробнее об условиях доставки</a>
+									</div>
+								</div>
+
+								<div class="total_price">
+									<div class="name">Общая стоимость</div>
+
+									<div class="price">10 000,00<span class="currency">c</span></div>
+
+									<a href="/" class="checkout_link">Перейти к оформлению</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -183,7 +309,7 @@
 				<section class="products block">
 					<div class="cont">
 						<div class="block_head">
-							<div class="title">Популярные товары</div>
+							<div class="title">Рекомендуем</div>
 						</div>
 
 						<div class="swiper-container">
@@ -1018,907 +1144,6 @@
 				</section>
 
 
-				<section class="categories block">
-					<div class="cont">
-						<div class="row">
-							<div><a href="/" class="category">
-								<span>Мужская одежда</span>
-								<div class="icon">
-									<img src="images/tmp/ic_category1.png" alt="">
-								</div>
-							</a></div>
-
-							<div><a href="/" class="category">
-								<span>Женская обувь</span>
-								<div class="icon">
-									<img src="images/tmp/ic_category2.png" alt="">
-								</div>
-							</a></div>
-
-							<div><a href="/" class="category">
-								<span>Косметика</span>
-								<div class="icon">
-									<img src="images/tmp/ic_category3.png" alt="">
-								</div>
-							</a></div>
-
-							<div><a href="/" class="category">
-								<span>Детская одежда</span>
-								<div class="icon">
-									<img src="images/tmp/ic_category4.png" alt="">
-								</div>
-							</a></div>
-
-							<div><a href="/" class="category">
-								<span>Детские игрушки</span>
-								<div class="icon">
-									<img src="images/tmp/ic_category5.png" alt="">
-								</div>
-							</a></div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="products block">
-					<div class="cont">
-						<div class="block_head">
-							<div class="title">Новинки</div>
-						</div>
-
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>1 956 <span class="currency">c</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">i-Style sportswear / Шорты юбка Double Fly/</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<img src="images/ic_star_middle.png" alt="" class="icon">
-
-												<span>32</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb2.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>4 500 <span class="currency">c</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">Леггинсы Giulia LEGGINGS</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-
-												<span>268</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb3.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>4 500 <span class="currency">c</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">Studded Kiss Lipstick Lecole des femmes</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-
-												<span>15</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>4 500 <span class="currency">c</span></div>
-												<div class="old">4 950,50 <span class="currency">a</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">Леггинсы Giulia LEGGINGS</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-
-												<span>45</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb5.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>5 810 <span class="currency">c</span></div>
-												<div class="old">9 950,50 <span class="currency">a</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">Mango / Куртка</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-
-												<span>10</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>1 956 <span class="currency">c</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">i-Style sportswear / Шорты юбка Double Fly/</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<img src="images/ic_star_middle.png" alt="" class="icon">
-
-												<span>32</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb2.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>4 500 <span class="currency">c</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">Леггинсы Giulia LEGGINGS</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-
-												<span>268</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb3.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>4 500 <span class="currency">c</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">Studded Kiss Lipstick Lecole des femmes</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-
-												<span>15</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>4 500 <span class="currency">c</span></div>
-												<div class="old">4 950,50 <span class="currency">a</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">Леггинсы Giulia LEGGINGS</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-
-												<span>45</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="slide swiper-slide">
-									<div class="product">
-										<div class="stickers">
-											<div class="sticker blue">new</div>
-										</div>
-
-										<div class="thumb">
-											<img data-src="images/tmp/product_thumb5.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="price">
-												<div>5 810 <span class="currency">c</span></div>
-												<div class="old">9 950,50 <span class="currency">a</span></div>
-											</div>
-
-											<div class="name">
-												<a href="/">Mango / Куртка</a>
-											</div>
-
-											<div class="rating">
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
-
-												<span>10</span>
-											</div>
-
-											<div class="options">
-												<div class="option">
-													<div class="title">Цвет:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
-															<img src="images/tmp/ic_product_color1.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
-															<img src="images/tmp/ic_product_color2.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
-															<img src="images/tmp/ic_product_color3.svg" alt="">
-														</label>
-
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
-															<img src="images/tmp/ic_product_color4.png" alt="">
-														</label>
-													</div>
-												</div>
-
-												<div class="option">
-													<div class="title">Размер:</div>
-
-													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
-
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
-
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
-
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
-													</div>
-												</div>
-											</div>
-
-											<button class="buy_btn">В корзину</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="swiper-button-prev">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
-							</div>
-
-							<div class="swiper-button-next">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="banners block">
-					<div class="cont">
-						<div class="row">
-							<a href="/" class="banner">
-								<div class="thumb">
-									<img data-src="images/tmp/banner_thumb1.jpg" alt="" class="lozad">
-								</div>
-							</a>
-
-							<a href="/" class="banner">
-								<div class="thumb">
-									<img data-src="images/tmp/banner_thumb2.jpg" alt="" class="lozad">
-								</div>
-							</a>
-
-							<a href="/" class="banner">
-								<div class="thumb">
-									<img data-src="images/tmp/banner_thumb3.jpg" alt="" class="lozad">
-								</div>
-							</a>
-						</div>
-					</div>
-				</section>
-
-
 				<section class="subscribe block">
 					<div class="cont">
 						<div class="data">
@@ -1940,9 +1165,7 @@
 			<footer>
 				<div class="cont row">
 					<div class="links">
-						<div class="title">
-							<a href="/">Покупателям</a>
-						</div>
+						<div class="title">Покупателям</div>
 
 						<div class="items">
 							<div><a href="/">Как сделать заказ</a></div>
@@ -1955,9 +1178,7 @@
 					</div>
 
 					<div class="links">
-						<div class="title">
-							<a href="/">Партнерам</a>
-						</div>
+						<div class="title">Партнерам</div>
 
 						<div class="items">
 							<div><a href="/">Стать продавцом</a></div>
@@ -1965,9 +1186,7 @@
 					</div>
 
 					<div class="links">
-						<div class="title">
-							<a href="/">Компания</a>
-						</div>
+						<div class="title">Компания</div>
 
 						<div class="items">
 							<div><a href="/">О нас</a></div>
@@ -2160,6 +1379,74 @@
 				<div class="title">Не удалось произвести поиск по ИНН</div>
 
 				<div class="desc">ИНН не найден</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="add_review_modal">
+			<div class="block_head">
+				<div class="title">Отзыв о товаре</div>
+			</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="label">Общая оценка</div>
+
+					<div class="field">
+						<div class="stars">
+							<input type="radio" name="rating" id="rating-5">
+							<label for="rating-5">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star2"></use></svg>
+							</label>
+
+							<input type="radio" name="rating" id="rating-4">
+							<label for="rating-4">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star2"></use></svg>
+							</label>
+
+							<input type="radio" name="rating" id="rating-3">
+							<label for="rating-3">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star2"></use></svg>
+							</label>
+
+							<input type="radio" name="rating" id="rating-2">
+							<label for="rating-2">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star2"></use></svg>
+							</label>
+
+							<input type="radio" name="rating" id="rating-1">
+							<label for="rating-1">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star2"></use></svg>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="label">Напишите ваш отзыв о товаре в поле ниже.</div>
+
+					<div class="field">
+						<div class="count">
+							<span class="current">0</span>/1000
+						</div>
+
+						<textarea name="" maxlength="1000" class="limit"></textarea>
+					</div>
+				</div>
+
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Написать отзыв</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="success_review_modal">
+			<div class="block_head">
+				<div class="title">Спасибо!</div>
+
+				<div class="desc">Признательны за то, что вы уделили время и поделились своим мнением.</div>
 			</div>
 		</section>
 

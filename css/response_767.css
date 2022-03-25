@@ -92,6 +92,24 @@
     }
 
 
+    .form .payment_methods
+    {
+        margin-left: -8px;
+    }
+
+    .form .payment_methods > *
+    {
+        width: calc(33.333% - 8px);
+        margin-left: 8px;
+    }
+
+
+    .form .payment_methods label
+    {
+        padding: 11px;
+    }
+
+
 
     /*----------------
         Typography
@@ -329,7 +347,175 @@
 
 
 
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .data
+    {
+        padding: 15px;
+    }
+
+
+    .cart_info .select_all
+    {
+        margin-bottom: 11px;
+        padding-bottom: 15px;
+    }
+
+
+    .cart_info .seller_name
+    {
+        line-height: 22px;
+
+        padding-bottom: 11px;
+    }
+
+
+    .cart_info .product
+    {
+        padding-left: 40px;
+    }
+
+
+    .cart_info .product .thumb
+    {
+        position: relative;
+        left: 0;
+    }
+
+
+    .cart_info .product .info
+    {
+        width: calc(100% - 100px);
+        margin-left: auto;
+    }
+
+
+    .cart_info .product .price
+    {
+        width: calc(100% - 160px);
+    }
+
+
+    .cart_info .product .amount
+    {
+        width: 136px;
+        min-width: 0;
+    }
+
+
+    .cart_info .product .price.total
+    {
+        margin-top: -26px;
+    }
+
+
+    .cart_info .delivery
+    {
+        line-height: 22px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .methods .icon + *
+    {
+        width: calc(100% - 97px);
+    }
+
+    .checkout_info .methods .btn
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 8px;
+    }
+
+
+    .checkout_info .cart .seller_name
+    {
+        line-height: 22px;
+
+        padding-bottom: 11px;
+    }
+
+
+    .checkout_info .cart .product
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .checkout_info .cart .product .info
+    {
+        width: calc(100% - 100px);
+        margin: 0 0 0 auto;
+    }
+
+
+    .checkout_info .cart .product .add_message
+    {
+        margin-top: 12px;
+    }
+
+    .checkout_info .cart .product .add_message .btn
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .checkout_info .cart .product .buy
+    {
+        display: flex;
+
+        width: 100%;
+        min-width: 0;
+        margin-top: 16px;
+        padding-left: 100px;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .checkout_info .cart .product .price
+    {
+        margin-top: 0;
+        margin-left: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #delivery_method_modal .address,
+    #delivery_method_modal .points
+    {
+        width: 100%;
+    }
+
+
+    #delivery_method_modal .points .list
+    {
+        height: auto;
+        max-height: 400px;
+    }
+
+
+    #delivery_method_modal .map_wrap
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
 }

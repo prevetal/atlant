@@ -334,6 +334,140 @@
 
 
 
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .product
+    {
+        position: relative;
+
+        padding-left: 140px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .cart_info .product .select
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        margin: 0;
+    }
+
+
+    .cart_info .product .thumb
+    {
+        position: absolute;
+        top: 0;
+        left: 40px;
+    }
+
+
+    .cart_info .product .info
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0 40px 0 0;
+    }
+
+    .cart_info .product .options
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .cart_info .product .price,
+    .cart_info .product .price.total
+    {
+        line-height: 24px;
+
+        margin-top: 20px;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+
+    .cart_info .product .amount
+    {
+        margin-top: 20px;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+
+    .cart_info .product .delete
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .cart_info .product .delete .btn
+    {
+        height: 24px;
+    }
+
+
+    .cart_info .delivery
+    {
+        line-height: 24px;
+
+        width: 100%;
+    }
+
+
+    .cart_info .total_price
+    {
+        width: 100%;
+        margin-top: 28px;
+
+        text-align: center;
+    }
+
+    .cart_info .total_price .name
+    {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .cart_info .total_price .price
+    {
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .data
+    {
+        width: 100%;
+    }
+
+
+    .checkout_info .cart .product .options
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .checkout_info .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -374,5 +508,16 @@
         margin-left: auto;
 
         order: 3;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #delivery_method_modal .address,
+    #delivery_method_modal .points
+    {
+        width: calc(50% - 32px);
     }
 }

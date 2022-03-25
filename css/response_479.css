@@ -110,6 +110,18 @@
     }
 
 
+    .form .payment_methods > *
+    {
+        width: calc(50% - 8px);
+    }
+
+
+    .form .payment_methods label
+    {
+        padding: 15px;
+    }
+
+
     .form .submit_btn
     {
         padding: 6px 20px;
@@ -200,6 +212,115 @@
 
 
 
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .product
+    {
+        padding-left: 32px;
+    }
+
+
+    .cart_info .product .thumb
+    {
+        width: 72px;
+        min-width: 72px;
+        height: 96px;
+    }
+
+
+    .cart_info .product .info
+    {
+        width: calc(100% - 88px);
+    }
+
+
+    .cart_info .product .price,
+    .cart_info .product .price.total
+    {
+        width: auto;
+        min-width: 0;
+        margin-top: 16px;
+    }
+
+    .cart_info .product .price.total
+    {
+        margin-top: 16px;
+        margin-left: auto;
+
+        align-self: center;
+    }
+
+
+    .cart_info .product .amount
+    {
+        width: 100%;
+
+        order: 3;
+    }
+
+    .cart_info .product .amount .minimum
+    {
+        margin-top: 8px;
+    }
+
+    .cart_info .product .amount .minimum br
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .methods .method
+    {
+        display: block;
+    }
+
+    .checkout_info .methods .icon + *
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+
+    .checkout_info .cart .product .thumb
+    {
+        width: 72px;
+        min-width: 72px;
+        height: 96px;
+    }
+
+
+    .checkout_info .cart .product .info
+    {
+        width: calc(100% - 88px);
+    }
+
+
+    .checkout_info .cart .product .buy
+    {
+        padding-left: 88px;
+    }
+
+    .checkout_info .cart .product .price
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+
+    .checkout_info .totals_info .info .address br
+    {
+        display: none;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -235,5 +356,18 @@
     {
         font-size: 14px;
         line-height: 18px;
+    }
+
+
+
+    #delivery_method_modal .search
+    {
+        padding: 15px;
+    }
+
+
+    #delivery_method_modal .map_wrap .map
+    {
+        min-height: 400px;
     }
 }

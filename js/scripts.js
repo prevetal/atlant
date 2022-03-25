@@ -334,6 +334,41 @@ $(() => {
 	})
 
 
+	// Добавление товара в корзину
+	$('.product_info .buy_btn, .product .buy_btn').click(function (e) {
+		e.preventDefault()
+
+		clearTimeout(timer)
+		$('#success_cart_added').hide()
+		$('#success_cart_added').fadeIn(300)
+
+		var timer = setTimeout(() => {
+			$('#success_cart_added').fadeOut(200)
+		}, 2000)
+	})
+
+
+	// Корзина - Выбрать все
+	$('.cart_info .select_all label').click(function () {
+		$('.cart_info .product .select input').prop('checked', true)
+	})
+
+
+	// Оформление заказа - Комментарий для продавца
+	$('.checkout_info .cart .product .add_message .btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.add_message')
+
+		$(this).hide()
+		parent.find('.form').fadeIn(300)
+	})
+
+
+	// Фиксация блока при скролле
+	$('.sticky').stick_in_parent()
+
+
 	// Отправка форм
 	$('body').on('submit', '#add_review_modal form', function (e) {
 		e.preventDefault()
