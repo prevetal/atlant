@@ -1,4 +1,5 @@
-@media print, (max-width: 1147px)
+@media print,
+(max-width: 1147px)
 {
     /*-------------------
         Global styles
@@ -356,6 +357,558 @@
     {
         font-size: 15px;
         line-height: 21px;
+    }
+
+
+
+    /*--------------
+        LK block
+    --------------*/
+    .lk_block .data
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*---------------
+        User info
+    ---------------*/
+    .lk_info .user_info .item .name
+    {
+        width: 252px;
+    }
+
+
+    .lk_info .user_info .item .val
+    {
+        width: calc(100% - 252px);
+    }
+
+
+
+    /*----------------
+        Deliveries
+    ----------------*/
+    .lk_info .deliveries .head
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-----------
+        Order
+    -----------*/
+    .lk_info .order .number,
+    .lk_info .order .date
+    {
+        width: 136px;
+    }
+
+    .lk_info .order .from_date
+    {
+        width: 160px;
+    }
+
+    .lk_info .order .price
+    {
+        width: 88px;
+    }
+
+
+
+    /*------------
+        Filter
+    ------------*/
+    .lk_info .filter .form .input
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .lk_info .documents .col_number,
+    .lk_info .documents .col_status
+    {
+        width: 108px;
+        min-width: 108px;
+    }
+
+    .lk_info .documents .col_date,
+    .lk_info .documents .col_price
+    {
+        width: 132px;
+        min-width: 132px;
+    }
+
+
+
+    /*----------------
+        Order info
+    ----------------*/
+    .order_info .data
+    {
+        width: calc(100% - 370px);
+    }
+
+
+    .order_info .product .info
+    {
+        margin: 0 24px;
+    }
+
+
+    .order_info .product .buy
+    {
+        width: 124px;
+        min-width: 124px;
+    }
+
+
+    .order_info .col_right
+    {
+        width: 338px;
+    }
+
+
+    .order_info .totals_info .delivery_info
+    {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .order_info .totals_info .delivery_info > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+    .order_info .totals_info .prices > *
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .order_info .totals_info .prices .total .val
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .lk_info .stats .item
+    {
+        line-height: 24px;
+    }
+
+
+    .lk_info .stats .amount
+    {
+        width: 124px;
+        min-width: 124px;
+    }
+
+
+    .lk_info .stats .price
+    {
+        font-size: 17px;
+
+        width: 124px;
+        min-width: 124px;
+    }
+
+    .lk_info .stats .price .currency
+    {
+        top: -2px;
+    }
+
+
+
+    /*------------
+        Update
+    ------------*/
+    .lk_info .update .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    /*----------------
+        Add prices
+    ----------------*/
+    .lk_info .add_prices .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    /*------------
+        Orders
+    ------------*/
+    .lk_info .orders .lk_block.no_padding
+    {
+        padding: 0;
+    }
+
+
+    .lk_info .orders .head.titles
+    {
+        display: none;
+    }
+
+
+    .lk_info .supllier_order:first-child
+    {
+        border-radius: 5px 5px 0 0;
+    }
+
+
+    .lk_info .supllier_order > *
+    {
+        position: relative;
+
+        padding-top: 24px;
+    }
+
+    .lk_info .supllier_order > *:before
+    {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 17px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 17px;
+
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+        letter-spacing: 0;
+        text-transform: none;
+
+        opacity: .6;
+    }
+
+
+    .lk_info .supllier_order .col_buyer br
+    {
+        display: none;
+    }
+
+
+    .lk_info .supllier_order .col_address
+    {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+    .lk_info .supllier_order .col_address br
+    {
+        display: none;
+    }
+
+
+    .lk_info .supllier_order .col_status
+    {
+        margin-top: 12px;
+    }
+
+
+    .lk_info .orders .col_date,
+    .lk_info .orders .col_price
+    {
+        width: 100px;
+        min-width: 100px;
+    }
+
+    .lk_info .orders .col_buyer
+    {
+        width: 140px;
+        min-width: 140px;
+    }
+
+    .lk_info .orders .col_address
+    {
+        width: calc(100% - 178px);
+
+        white-space: normal;
+    }
+
+
+
+    .lk_info .supllier_order .col_products .titles
+    {
+        font-size: 13px;
+    }
+
+
+
+    .lk_info .supllier_order .product .thumb ~ *
+    {
+        padding-top: 0;
+    }
+
+    .lk_info .supllier_order .product .name a
+    {
+        padding: 0;
+    }
+
+    .lk_info .supllier_order .col_products .model
+    {
+        width: 100px;
+        min-width: 100px;
+    }
+
+    .lk_info .supllier_order .col_products .amount
+    {
+        width: 92px;
+        min-width: 92px;
+    }
+
+    .lk_info .supllier_order .col_products .price.total
+    {
+        width: 116px;
+        min-width: 116px;
+    }
+
+    .lk_info .supllier_order .col_products .select
+    {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+
+
+    /*------------------------
+        LK products search
+    ------------------------*/
+    .lk_products .search .add_btns .btn,
+    .lk_products .search .instruction_link a
+    {
+        font-size: 15px;
+    }
+
+
+    .lk_products .lk_block
+    {
+        padding: 0;
+    }
+
+
+    .lk_products .head.titles
+    {
+        display: none;
+    }
+
+
+    .lk_products .product
+    {
+        min-height: 150px;
+        padding: 10px 19px 10px 143px;
+
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .lk_products .product:before,
+    .lk_products .product:after
+    {
+        display: none;
+    }
+
+    .lk_products .product:first-child
+    {
+        border-radius: 5px 5px 0 0;
+    }
+
+
+    .lk_products .product .select,
+    .lk_products .product .actions
+    {
+        left: 19px;
+    }
+
+
+    .lk_products .product > * + *
+    {
+        margin-left: 0;
+    }
+
+
+    .lk_products .product > *:not(.select, .actions)
+    {
+        position: relative;
+
+        padding-top: 20px;
+    }
+
+    .lk_products .product > *:not(.select, .actions):before
+    {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 17px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 17px;
+
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+        letter-spacing: 0;
+        text-transform: none;
+
+        opacity: .6;
+    }
+
+
+    .lk_products .product .col_thumb
+    {
+        position: absolute;
+        top: 10px;
+        left: 55px;
+
+        margin-left: 0;
+    }
+
+
+    .lk_products .product .col_articul,
+    .lk_products .product .col_date,
+    .lk_products .product .col_activity,
+    .lk_products .product .col_price,
+    .lk_products .product .col_brand,
+    .lk_products .product .col_thing,
+    .lk_products .product .col_availability
+    {
+        width: calc(25% - 12px);
+        min-width: 0;
+        margin-left: 12px;
+    }
+
+    .lk_products .product .col_activity,
+    .lk_products .product .col_price,
+    .lk_products .product .col_availability
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*-----------------
+        Add product
+    -----------------*/
+    .lk_info .add_product .form .line,
+    .lk_info .add_product .form .compound
+    {
+        width: 516px;
+    }
+
+
+    .lk_info .add_product .form .exp
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 165px;
+    }
+
+
+
+    /*-----------------
+        Add product
+    -----------------*/
+    .add_product .price_setting .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .add_product .product_prices
+    {
+        padding: 0;
+    }
+
+
+    .add_product .product_prices .head.titles
+    {
+        display: none;
+    }
+
+
+    .add_product .product_prices .product
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+
+    .add_product .product_prices .product > *
+    {
+        position: relative;
+
+        width: 25% !important;
+        min-width: 0 !important;
+        padding-top: 20px;
+    }
+
+    .add_product .product_prices .product > *:before
+    {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 17px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 17px;
+
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+        letter-spacing: 0;
+        text-transform: none;
+
+        opacity: .6;
+    }
+
+    .add_product .product_prices .product > * + *
+    {
+        margin-left: 0;
+    }
+
+    .add_product .product_prices .col_size,
+    .add_product .product_prices .col_barcode,
+    .add_product .product_prices .col_price
+    {
+        margin-top: 12px;
     }
 
 

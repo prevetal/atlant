@@ -35,6 +35,12 @@ $(() => {
 	$('select').niceSelect()
 
 
+	// Выбор файла
+	$('body').on('change', '.form input[type=file]', function (e) {
+		$(this).closest('.file').find('.path').text($(this).val())
+	})
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.dragToClose = false
@@ -113,7 +119,7 @@ $(() => {
 	// Табы
 	var locationHash = window.location.hash
 
-	$('body').on('click', '.tabs button', function (e) {
+	$('body').on('click', '.tabs button:not(.add_btn)', function (e) {
 		e.preventDefault()
 
 		if (!$(this).hasClass('active')) {
@@ -144,6 +150,38 @@ $(() => {
 
 		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
+
+
+	// Мини всплывающие окна
+	$('.mini_modal_btn').click(function (e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.modal_cont')
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('.mini_modal').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		} else {
+			$('.mini_modal_btn').removeClass('active')
+			$(this).addClass('active')
+
+			$('.mini_modal').removeClass('active')
+			parent.find('.mini_modal').addClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
+	})
+
+	// Закрываем всплывашку при клике за её пределами
+	$(document).click((e) => {
+		if ($(e.target).closest('.modal_cont').length === 0) {
+			$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
+	})
 
 
 	// Моб. версия

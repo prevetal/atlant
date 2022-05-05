@@ -42,7 +42,7 @@
 	<body>
 		<div class="wrap">
 			<div class="main">
-				<header>
+				<header class="margin">
 					<div class="top">
 						<div class="cont row">
 							<div class="location">
@@ -50,364 +50,316 @@
 								<span>Новосибирск</span>
 							</div>
 
-							<div class="links">
-								<div><a href="/">Стать продавцом</a></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="info">
-						<div class="cont row">
-							<a href="/" class="logo">
-								<img src="images/logo.png" alt="">
-							</a>
-
-							<a href="/" class="catalog_link">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
-								<span>Каталог</span>
-							</a>
-
-							<div class="search">
-								<form action="">
-									<input type="text" name="" value="" class="input" placeholder="Например, бронзер">
-
-									<button type="submit" class="submit_btn">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
-									</button>
-								</form>
-							</div>
-
-							<div class="links">
-								<div><button class="account_link link modal_btn" data-content="#login_modal">
-									<div class="icon">
-										<svg><use xlink:href="images/sprite.svg#ic_user"></use></svg>
-									</div>
-									<span>Кабинет</span>
-								</button></div>
-
-								<div><a href="/" class="orders_link link">
-									<div class="icon">
-										<svg><use xlink:href="images/sprite.svg#ic_order"></use></svg>
-									</div>
-									<span>Заказы</span>
-								</a></div>
-
-								<div><a href="/" class="cart_link link">
-									<div class="icon">
-										<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-										<div class="count">2</div>
-									</div>
-									<span>Корзина</span>
-								</a></div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="bottom">
-						<div class="cont">
-							<nav class="menu row">
-								<div class="item">
-									<a href="/" class="sub_link">
-										<span class="arr"></span>
-									</a>
-
-									<div class="sub_menu">
-										<div><a href="/"></a></div>
-									</div>
-								</div>
-
-								<div class="item">
-									<a href="/"></a>
-								</div>
-
-								<div class="item">
-									<a href="/"></a>
-								</div>
-
-								<div class="item">
-									<a href="/"></a>
-								</div>
-
-								<div class="item">
-									<a href="/"></a>
-								</div>
-							</nav>
+							<button class="logout_btn">
+								<span>Выйти</span>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</button>
 						</div>
 					</div>
 				</header>
 
 
-				<section class="page_head">
-					<div class="cont">
-						<h1 class="page_title">Оформление заказа</h1>
-					</div>
-				</section>
-
-
-				<section class="checkout_info block">
+				<section class="lk_info content_flex block">
 					<div class="cont row">
-						<section class="data">
-							<section class="methods">
-								<div class="method">
-									<div class="icon">
-										<img data-src="images/ic_delivery_method.svg" alt="" class="lozad">
+						<aside>
+							<a href="/" class="logo">
+								<img src="images/logo.png" alt="">
+							</a>
+
+							<div class="lk_menu">
+								<div><a href="/">Главная</a></div>
+								<div><a href="/">Заказы <span>3</span></a></div>
+								<div><a class="active">Товары</a></div>
+								<div><a href="/">Цены и скидки</a></div>
+								<div><a href="/">Документы</a></div>
+								<div><a href="/">Мои отзывы</a></div>
+								<div><a href="/">Профиль</a></div>
+
+								<div><button class="logout_btn">
+									<span>Выйти</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+								</button></div>
+							</div>
+						</aside>
+
+
+						<section class="content add_product">
+							<div class="breadcrumbs">
+								<a href="/" class="back_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow2"></use></svg>
+									<span>Назад</span>
+								</a>
+
+								<a href="/">Карточки товара</a> <span class="sep">&rarr;</span>
+								<span class="current">Создание карточки товара</span>
+							</div>
+
+							<section class="section">
+								<div class="section_title">Создание карточки товара</div>
+
+								<div class="steps">
+									<div class="step active">
+										<div class="number"></div>
+										<div>Добавить товар</div>
 									</div>
 
-									<div>
-										<div class="name">Способ доставки</div>
+									<div class="step">
+										<div class="number"></div>
+										<div>Добавить цену</div>
+									</div>
 
-										<button class="btn modal_btn" data-content="#delivery_method_modal">
-											<span class="plus"></span>
-											<span>Выбрать способ доставки</span>
-										</button>
+									<div class="step">
+										<div class="number"></div>
+										<div>Основные характеристики</div>
 									</div>
 								</div>
 
-								<div class="method">
-									<div class="icon">
-										<img data-src="images/ic_payment_method.svg" alt="" class="lozad">
-									</div>
+								<form action="" class="form">
+									<div class="section">
+										<div class="line">
+											<div class="label">Выберите категорию товара <span class="required">*</span></div>
 
-									<div>
-										<div class="name">Способ оплаты</div>
-
-										<button class="btn modal_btn" data-content="#payment_method_modal">
-											<span class="plus"></span>
-											<span>Выбрать способ оплаты</span>
-										</button>
-									</div>
-								</div>
-
-								<div class="method">
-									<div class="icon">
-										<img data-src="images/ic_personal_data.svg" alt="" class="lozad">
-									</div>
-
-									<div>
-										<div class="name">Ваши данные</div>
-
-										<button class="btn modal_btn" data-content="#personal_data_modal">
-											<span class="plus"></span>
-											<span>Указать данные о покупателе</span>
-										</button>
-									</div>
-								</div>
-							</section>
-
-
-							<section class="cart">
-								<div>
-									<div class="seller_name">Магазин: AoFuson Wolf Official Store</div>
-
-									<div class="items">
-										<div class="product">
-											<a href="/" class="thumb" target="_blank">
-												<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad">
-											</a>
-
-											<div class="info">
-												<div class="name">
-													<a href="/">Леггинсы Giulia LEGGINGS, CC0000_0000</a>
-												</div>
-
-												<div class="options">
-													<div>Цвет: Чёрный</div>
-													<div>Размер: S</div>
-													<div>Доставка из: Россия</div>
-												</div>
-
-												<div class="add_message">
-													<button class="btn">
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_message"></use></svg>
-														<span>Комментарий для продавца</span>
-													</button>
-
-													<form action="" class="form">
-														<div class="field">
-															<input type="text" name="" value="" class="input" placeholder="Комментарий для продавца ">
-														</div>
-													</form>
-												</div>
+											<div class="field">
+												<select name="">
+													<option value="0" data-display="По товарам"></option>
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 1</option>
+													<option value="3">Вариант 1</option>
+												</select>
 											</div>
 
-											<div class="buy">
-												<div class="amount">
-													<button type="button" class="minus"></button>
+											<div class="exp">из Одежда</div>
+										</div>
 
-													<input type="text" value="1" class="input"
-													data-minimum="5" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+										<div class="line">
+											<div class="label">Бренд <span class="required">*</span></div>
 
-													<button type="button" class="plus"></button>
-												</div>
+											<div class="field">
+												<div class="arr"></div>
 
-												<div class="price">
-													<div>2 500,00<span class="currency">a</span></div>
-												</div>
+												<input type="text" name="" value="" class="input" placeholder="Начните вводить название бренда">
 											</div>
 										</div>
 
+										<div class="line">
+											<div class="label">Пол <span class="required">*</span></div>
 
-										<div class="product">
-											<a href="/" class="thumb" target="_blank">
-												<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad">
-											</a>
-
-											<div class="info">
-												<div class="name">
-													<a href="/">Леггинсы Giulia LEGGINGS, CC0000_0000</a>
-												</div>
-
-												<div class="options">
-													<div>Цвет: Чёрный</div>
-													<div>Размер: S</div>
-													<div>Доставка из: Россия</div>
-												</div>
-
-												<div class="add_message">
-													<button class="btn">
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_message"></use></svg>
-														<span>Комментарий для продавца</span>
-													</button>
-
-													<form action="" class="form">
-														<div class="field">
-															<input type="text" name="" value="" class="input" placeholder="Комментарий для продавца ">
-														</div>
-													</form>
-												</div>
-											</div>
-
-											<div class="buy">
-												<div class="amount">
-													<button type="button" class="minus"></button>
-
-													<input type="text" value="1" class="input"
-													data-minimum="5" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-													<button type="button" class="plus"></button>
-												</div>
-
-												<div class="price">
-													<div>2 500,00<span class="currency">a</span></div>
-												</div>
+											<div class="field">
+												<select name="">
+													<option value="0" data-display="Пол"></option>
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 1</option>
+													<option value="3">Вариант 1</option>
+												</select>
 											</div>
 										</div>
-									</div>
-								</div>
 
+										<div class="line">
+											<div class="label">Страна поставки <span class="required">*</span></div>
 
-								<div>
-									<div class="seller_name">Магазин: AoFuson Wolf Official Store</div>
+											<div class="field">
+												<select name="">
+													<option value="0" data-display="Пол"></option>
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 1</option>
+													<option value="3">Вариант 1</option>
+												</select>
+											</div>
+										</div>
 
-									<div class="items">
-										<div class="product">
-											<a href="/" class="thumb" target="_blank">
-												<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad">
-											</a>
+										<div class="line">
+											<div class="label">Артикул <span class="required">*</span></div>
 
-											<div class="info">
-												<div class="name">
-													<a href="/">Леггинсы Giulia LEGGINGS, CC0000_0000</a>
+											<div class="field">
+												<select name="">
+													<option value="0" data-display="Пол"></option>
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 1</option>
+													<option value="3">Вариант 1</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="title">Состав</div>
+
+										<div class="compound">
+											<div class="row">
+												<div class="line">
+													<div class="label">Материал</div>
+
+													<div class="field">
+														<input type="text" name="" value="" class="input">
+													</div>
 												</div>
 
-												<div class="options">
-													<div>Цвет: Чёрный</div>
-													<div>Размер: S</div>
-													<div>Доставка из: Россия</div>
-												</div>
+												<div class="line">
+													<div class="label">Процентное значение</div>
 
-												<div class="add_message">
-													<button class="btn">
-														<svg class="icon"><use xlink:href="images/sprite.svg#ic_message"></use></svg>
-														<span>Комментарий для продавца</span>
-													</button>
-
-													<form action="" class="form">
-														<div class="field">
-															<input type="text" name="" value="" class="input" placeholder="Комментарий для продавца ">
-														</div>
-													</form>
+													<div class="field">
+														<input type="text" name="" value="" class="input">
+													</div>
 												</div>
 											</div>
 
-											<div class="buy">
-												<div class="amount">
-													<button type="button" class="minus"></button>
+											<button type="button" class="add_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+											</button>
 
-													<input type="text" value="1" class="input"
-													data-minimum="5" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+											<div class="template">
+												<div class="row">
+													<div class="line">
+														<div class="label">Материал</div>
 
-													<button type="button" class="plus"></button>
-												</div>
+														<div class="field">
+															<input type="text" name="" value="" class="input">
+														</div>
+													</div>
 
-												<div class="price">
-													<div>2 500,00<span class="currency">a</span></div>
+													<div class="line">
+														<div class="label">Процентное значение</div>
+
+														<div class="field">
+															<input type="text" name="" value="" class="input">
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
+
+
+									<div class="colors">
+										<div class="tabs_container">
+											<div class="tabs">
+												<button data-content="#color_tab1" data-level="level1" class="active">Цвет 1</button>
+
+												<button type="button" class="add_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+													<span>Добавить цвет</span>
+												</button>
+											</div>
+
+
+											<div class="tab_content level1 active" id="color_tab1">
+												<div class="line">
+													<div class="label">Основной цвет</div>
+
+													<div class="field">
+														<select name="">
+															<option value="0" data-display="Основной цвет"></option>
+															<option value="1">Вариант 1</option>
+															<option value="2">Вариант 1</option>
+															<option value="3">Вариант 1</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="line">
+													<div class="label">Дополнительные цвета</div>
+
+													<div class="field">
+														<select name="">
+															<option value="0" data-display="Дополнительные цвета"></option>
+															<option value="1">Вариант 1</option>
+															<option value="2">Вариант 1</option>
+															<option value="3">Вариант 1</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="line">
+													<div class="label">Артикул цвета товара <span class="required">*</span></div>
+
+													<div class="field">
+														<div class="arr"></div>
+
+														<input type="text" name="" value="" class="input" placeholder="Начните вводить название бренда">
+													</div>
+												</div>
+
+												<div class="line info">
+													<div class="row">
+														<div class="line">
+															<div class="label">Размер <span class="required">*</span></div>
+
+															<div class="field">
+																<input type="text" name="" value="" class="input" placeholder="Размер">
+															</div>
+														</div>
+
+														<div class="line">
+															<div class="label">Рос. размер <span class="required">*</span></div>
+
+															<div class="field">
+																<input type="text" name="" value="" class="input" placeholder="Размер">
+															</div>
+														</div>
+
+														<div class="line">
+															<div class="label">Штрихкод товара <span class="required">*</span></div>
+
+															<div class="field">
+																<input type="text" name="" value="" class="input" placeholder="123-black">
+															</div>
+														</div>
+													</div>
+
+													<button type="button" class="add_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+													</button>
+
+													<div class="template">
+														<div class="row">
+															<div class="line">
+																<div class="label">Размер <span class="required">*</span></div>
+
+																<div class="field">
+																	<input type="text" name="" value="" class="input" placeholder="Размер">
+																</div>
+															</div>
+
+															<div class="line">
+																<div class="label">Рос. размер <span class="required">*</span></div>
+
+																<div class="field">
+																	<input type="text" name="" value="" class="input" placeholder="Размер">
+																</div>
+															</div>
+
+															<div class="line">
+																<div class="label">Штрихкод товара <span class="required">*</span></div>
+
+																<div class="field">
+																	<input type="text" name="" value="" class="input" placeholder="123-black">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="line image">
+													<div class="field">
+														<input type="file" name="image" id="image">
+														<label for="">
+															<div class="btn">Добавить фото</div>
+
+															<div class="zone">+ Нажмите или перетяните сюда файл</div>
+														</label>
+													</div>
+
+													<div class="exp">Желательный формат фото 900х1200.<br> <span class="red">Фото другого формата будут растягиваться!</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="submit">
+										<button type="submit" class="submit_btn">Далее</button>
+									</div>
+								</form>
 							</section>
 						</section>
-
-
-						<section class="col_right">
-							<section class="totals_info sticky">
-								<div class="total_price">
-									<div class="name">Итого</div>
-									<div class="val">22 500,00<span class="currency">c</span></div>
-								</div>
-
-								<div class="prices">
-									<div>
-										<div class="name">Товары, 10 шт</div>
-										<div class="val">2 500,00<span class="currency">a</span></div>
-									</div>
-
-									<div>
-										<div class="name">Скидка</div>
-										<div class="val">-200<span class="currency">a</span></div>
-									</div>
-
-									<div>
-										<div class="name">Доставка</div>
-										<div class="val">Курьером</div>
-									</div>
-								</div>
-
-								<div class="info">
-									<div class="payment_method">
-										<div class="name">Оплата <b>Банковская карта</b></div>
-									</div>
-								</div>
-
-								<div class="exp">Стоимость и дату доставки сообщит менеджер после оформления заказа.</div>
-
-								<button class="pay_btn">Оформить заказ</button>
-
-								<div class="exp">Ссылка для оплаты заказа вам придет после подтаерждения заказа менеджером.</div>
-
-								<div class="agree">Согласен с условиями <a href="/" target="_blank">Правил пользования торговой площадкой</a> и <a href="/" target="_blank">Правилами возврата</a></div>
-							</section>
-						</section>
-					</div>
-				</section>
-
-
-				<section class="subscribe block">
-					<div class="cont">
-						<div class="data">
-							<div class="title">Подпишитесь на рассылку, чтобы получать уведомления об акциях и скидках.</div>
-
-							<form action="">
-								<input type="email" name="" value="" class="input" placeholder="Введите ваш email">
-
-								<button type="submit" class="submit_btn">Подписаться на рассылку</button>
-							</form>
-
-							<div class="agree">Нажимая по "Подписаться", я соглашаюсь получать рекламные и иные маркетинговые сообщения на условиях "Политики конфиденциальности" и "Пользовательского соглашения"</div>
-						</div>
 					</div>
 				</section>
 			</div>

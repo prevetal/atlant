@@ -1,4 +1,5 @@
-@media print, (max-width: 1023px)
+@media print,
+(max-width: 1023px)
 {
     /*-------------------
         Global styles
@@ -22,6 +23,21 @@
     .fancybox__slide
     {
         padding: 24px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .actions
+    {
+        font-size: 15px;
+    }
+
+    .pagination .actions > * + *
+    {
+        margin-left: 20px;
     }
 
 
@@ -464,6 +480,53 @@
     {
         width: 100%;
         margin-top: 40px;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .section_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*----------------
+        Order info
+    ----------------*/
+    .order_info .data
+    {
+        width: 100%;
+    }
+
+
+    .order_info .product .options
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .order_info .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*-----------------
+        Add product
+    -----------------*/
+    .lk_info .add_product .form .exp
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        width: 153px;
     }
 
 

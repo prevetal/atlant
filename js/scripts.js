@@ -369,6 +369,169 @@ $(() => {
 	$('.sticky').stick_in_parent()
 
 
+	// ЛК - Поставщик - Заказы
+	$('.lk_info .supllier_order').click(function (e) {
+		if ($(e.target).closest('.col_status').length === 0 && $(e.target).closest('.col_products').length === 0) {
+			$(this).toggleClass('active').find('.col_products').slideToggle(300)
+		}
+	})
+
+	$('.lk_info .supllier_order select').change(function () {
+		let _self = $(this)
+
+		setTimeout(() => {
+			if (_self.val() == 6) { // 6 - это значение value у option с нужным статусом
+				Fancybox.show([{
+					src: '#pending_payment_modal',
+					type: 'inline'
+				}])
+			}
+		})
+	})
+
+
+	// ЛК - Поставщик - Товары
+	$('.lk_products .product .actions .edit_btn').click(function (e) {
+		e.preventDefault()
+
+		let products = $('.lk_products'),
+			product = $(this).closest('.product')
+
+		product.addClass('form')
+
+		products.find('.pagination').hide()
+		products.find('.submit').css('display', 'flex')
+
+		$('.mini_modal_btn').removeClass('active')
+		$('.mini_modal').removeClass('active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
+
+	// ЛК - Поставщик - Добавление товара
+	$('.add_product .form .compound .add_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.compound'),
+			html = parent.find('.template').html()
+
+		$(this).before(html)
+	})
+
+	$('.add_product .form .info .add_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.info'),
+			html = parent.find('.template').html()
+
+		$(this).before(html)
+	})
+
+
+	// ЛК - График 1
+	const myChart = document.getElementById('myChart')
+
+	if (myChart) {
+		new Chart(myChart.getContext('2d'), {
+			type: 'line',
+			data: {
+				labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+				datasets: [
+					{
+						label: 'Текущая неделя',
+						data: [12, 19, 3, 5, 2, 3],
+						borderColor: 'rgba(222,14,14,.5)',
+						backgroundColor: '#de0e0e',
+						borderWidth: 2
+					},
+					{
+						label: 'Прошедшая неделя',
+						data: [3, 2, 5, 3, 19, 12],
+						borderColor: 'rgba(0,152,255,.5)',
+						backgroundColor: '#0098ff',
+						borderWidth: 2
+					}
+				]
+			},
+			options: {
+				responsive: true,
+				plugins: {
+					legend: {
+						position: 'bottom',
+						labels: {
+							boxWidth: 7,
+							boxHeight: 7,
+							padding: 8,
+							textAlign: 'left',
+							usePointStyle: true,
+							color: '#a2a2a2',
+							font: {
+								size: 13
+							}
+						}
+					},
+					title: {
+						display: false
+					}
+				}
+			}
+		})
+	}
+
+
+	// ЛК - График 2
+	const myChart2 = document.getElementById('myChart2')
+
+	if (myChart2) {
+		new Chart(myChart2.getContext('2d'), {
+			type: 'line',
+			data: {
+				labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+				datasets: [
+					{
+						label: 'Текущая неделя',
+						data: [12, 19, 3, 5, 2, 3],
+						borderColor: 'rgba(222,14,14,.5)',
+						backgroundColor: '#de0e0e',
+						borderWidth: 2
+					},
+					{
+						label: 'Прошедшая неделя',
+						data: [3, 2, 5, 3, 19, 12],
+						borderColor: 'rgba(93,217,140,.5)',
+						backgroundColor: '#5dd98c',
+						borderWidth: 2
+					}
+				]
+			},
+			options: {
+				responsive: true,
+				plugins: {
+					legend: {
+						position: 'bottom',
+						labels: {
+							boxWidth: 7,
+							boxHeight: 7,
+							padding: 8,
+							textAlign: 'left',
+							usePointStyle: true,
+							color: '#a2a2a2',
+							font: {
+								size: 13
+							}
+						}
+					},
+					title: {
+						display: false
+					}
+				}
+			}
+		})
+	}
+
+
+
 	// Отправка форм
 	$('body').on('submit', '#add_review_modal form', function (e) {
 		e.preventDefault()

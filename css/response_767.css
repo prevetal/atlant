@@ -1,4 +1,5 @@
-@media print, (max-width: 767px)
+@media print,
+(max-width: 767px)
 {
     /*-------------------
         Global styles
@@ -31,10 +32,37 @@
     }
 
 
+    .pagination .counts
+    {
+        width: 100%;
+    }
+
+
+    .pagination .actions
+    {
+        display: block;
+
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .pagination .actions > * + *
+    {
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+
 
     /*------------
         Header
     ------------*/
+    header.margin
+    {
+        margin-bottom: 20px;
+    }
+
+
     header .top
     {
         display: none;
@@ -66,6 +94,16 @@
     header .catalog_link
     {
         bottom: 20px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .lk_menu
+    {
+        margin-top: 24px;
     }
 
 
@@ -490,9 +528,640 @@
 
 
 
+    /*--------------
+        LK block
+    --------------*/
+    .lk_block.no_padding
+    {
+        padding: 0;
+    }
+
+
+    .lk_block .edit_btn span
+    {
+        display: none;
+    }
+
+    .lk_block .edit_btn .icon
+    {
+        margin-left: 0;
+    }
+
+
+    .lk_block .edit_pass_btn span
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        User info
+    ---------------*/
+    .lk_info .user_info .item
+    {
+        line-height: 23px;
+
+        position: relative;
+    }
+
+    .lk_info .user_info .item + .item
+    {
+        margin-top: 8px;
+    }
+
+
+    .lk_info .user_info .item .name
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .lk_info .user_info .item .val,
+    .lk_info .user_info.contacts_info .item .val
+    {
+        width: 100%;
+    }
+
+    .lk_info .user_info.contacts_info .edit_btn:not(.edit_pass_btn)
+    {
+        position: absolute;
+        top: 11px;
+        right: 18px;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .my_data .col_left
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+    /*-------------
+        My data
+    -------------*/
+    .lk_info .my_data .lk_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------
+        Order
+    -----------*/
+    .lk_info .order .head > * + *
+    {
+        margin-left: 0;
+    }
+
+
+    .lk_info .order .number,
+    .lk_info .order .date,
+    .lk_info .order .from_date,
+    .lk_info .order .price,
+    .lk_info .order .status
+    {
+        width: 50%;
+        margin-top: 16px;
+    }
+
+    .lk_info .order .number,
+    .lk_info .order .from_date
+    {
+        margin-top: 0;
+    }
+
+    .lk_info .order .status
+    {
+        margin-left: auto;
+    }
+
+
+
     /*------------
-        Footer
+        Filter
     ------------*/
+    .lk_info .filter_tabs button
+    {
+        height: 48px;
+    }
+
+
+    .lk_info .filter .desc
+    {
+        line-height: 21px;
+    }
+
+
+    .lk_info .filter .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .lk_info .documents .titles
+    {
+        display: none;
+    }
+
+
+    .lk_info .documents .document
+    {
+        flex-wrap: wrap;
+    }
+
+    .lk_info .documents .document:nth-child(2n)
+    {
+        background: #dcf1ff;
+    }
+
+
+    .lk_info .documents .document > *
+    {
+        position: relative;
+
+        padding-top: 20px;
+    }
+
+    .lk_info .documents .document > *:before
+    {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 20px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 20px;
+
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+        letter-spacing: 0;
+        text-transform: none;
+
+        opacity: .6;
+    }
+
+    .lk_info .documents .document > * + *
+    {
+        margin-left: 0;
+    }
+
+
+    .lk_info .documents .document .col_status
+    {
+        margin-top: 8px;
+    }
+
+
+    .lk_info .documents .document .col_action
+    {
+        margin-top: 8px;
+        margin-left: auto;
+
+        justify-content: flex-start;
+    }
+
+
+    .lk_info .documents .document .download span
+    {
+        opacity: 1;
+    }
+
+
+    .lk_info .documents .col_number,
+    .lk_info .documents .col_status,
+    .lk_info .documents .col_date,
+    .lk_info .documents .col_price,
+    .lk_info .documents .col_action
+    {
+        width: 33.333%;
+        min-width: 0;
+    }
+
+
+
+    /*----------------
+        Order info
+    ----------------*/
+    .order_info .product
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .order_info .product .info
+    {
+        width: calc(100% - 100px);
+        margin: 0 0 0 auto;
+        padding: 0;
+    }
+
+
+    .order_info .product .buy
+    {
+        display: flex;
+
+        width: 100%;
+        min-width: 0;
+        margin-top: 16px;
+        padding-left: 100px;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .order_info .product .price
+    {
+        margin-top: 0;
+    }
+
+    .order_info .product .buy_btn
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*----------------
+        My reviews
+    ----------------*/
+    .lk_info .my_reviews .review .info
+    {
+        width: 100%;
+        margin-top: 16px;
+
+        order: 2;
+    }
+
+
+    .lk_info .my_reviews .review .col_right
+    {
+        margin-left: auto;
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+
+
+    .lk_info .my_reviews .review .delete_btn
+    {
+        top: 19px;
+        bottom: auto;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .lk_info .stats .amount
+    {
+        width: 100px;
+        min-width: 100px;
+    }
+
+
+    .lk_info .stats .price
+    {
+        font-size: 16px;
+
+        width: 100px;
+        min-width: 100px;
+    }
+
+
+
+    /*------------
+        Charts
+    ------------*/
+    .lk_info .charts .row
+    {
+        margin-left: 0;
+    }
+
+
+    .lk_info .charts .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .lk_info .charts .price .currency
+    {
+        top: 0;
+    }
+
+
+
+    /*------------
+        Update
+    ------------*/
+    .lk_info .update .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .lk_info .update .upload .file
+    {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+
+    .lk_info .update .upload .form .submit,
+    .lk_info .update .upload .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Add prices
+    ----------------*/
+    .lk_info .add_prices .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .lk_info .add_prices .upload .file
+    {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+
+    .lk_info .add_prices .upload .form .submit,
+    .lk_info .add_prices .upload .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Orders
+    ------------*/
+    .lk_info .orders .col_date,
+    .lk_info .orders .col_price,
+    .lk_info .orders .col_number,
+    .lk_info .orders .col_buyer
+    {
+        width: calc(50% - 8px);
+        min-width: 0;
+    }
+
+    .lk_info .orders .col_buyer,
+    .lk_info .orders * + .col_date
+    {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+    .lk_info .orders .col_price
+    {
+        margin-top: 16px;
+    }
+
+
+
+    .lk_info .supllier_order .col_products .titles
+    {
+        display: none;
+    }
+
+
+    .lk_info .supllier_order .product
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .lk_info .supllier_order .col_products .info
+    {
+        width: calc(100% - 100px);
+        padding-right: 40px;
+    }
+
+
+    .lk_info .supllier_order .col_products .model,
+    .lk_info .supllier_order .product .price,
+    .lk_info .supllier_order .col_products .amount,
+    .lk_info .supllier_order .col_products .price.total
+    {
+        position: relative;
+
+        width: auto;
+        min-width: 0;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-top: 20px;
+    }
+
+    .lk_info .supllier_order .col_products .amount
+    {
+        min-width: 80px;
+    }
+
+    .lk_info .supllier_order .col_products .model:before,
+    .lk_info .supllier_order .product .price:before,
+    .lk_info .supllier_order .col_products .amount:before,
+    .lk_info .supllier_order .col_products .price.total:before
+    {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 17px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 17px;
+
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+        letter-spacing: 0;
+        text-transform: none;
+
+        opacity: .6;
+    }
+
+
+
+    /*------------------------
+        LK products search
+    ------------------------*/
+    .lk_products .search .add_btns
+    {
+        margin-left: 0;
+    }
+
+    .lk_products .search .add_btns > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .lk_products .search .add_btns .btn,
+    .lk_products .search .instruction_link a
+    {
+        font-size: 14px;
+    }
+
+
+    .lk_products .search .instruction_link
+    {
+        margin-top: 12px;
+        margin-left: auto;
+    }
+
+
+
+    .lk_products .product
+    {
+        padding-right: 15px;
+        padding-left: 139px;
+    }
+
+
+    .lk_products .product .select,
+    .lk_products .product .actions
+    {
+        left: 15px;
+    }
+
+
+    .lk_products .product .col_thumb
+    {
+        left: 51px;
+    }
+
+
+    .lk_products .product .col_articul,
+    .lk_products .product .col_date,
+    .lk_products .product .col_activity,
+    .lk_products .product .col_price,
+    .lk_products .product .col_brand,
+    .lk_products .product .col_thing,
+    .lk_products .product .col_availability
+    {
+        width: calc(50% - 12px);
+    }
+
+    .lk_products .product .col_brand,
+    .lk_products .product .col_thing
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*-----------------
+        Add product
+    -----------------*/
+    .lk_info .add_product .steps .step
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .lk_info .add_product .form .exp,
+    .lk_info .add_product .form .image .exp
+    {
+        position: relative;
+        left: 0;
+
+        width: 100%;
+        margin-top: 4px;
+        margin-left: 0;
+        padding: 0;
+    }
+
+
+    .lk_info .add_product .form .compound .row > *,
+    .lk_info .add_product .form .info .row > *
+    {
+        width: 100%;
+    }
+
+    .lk_info .add_product .form .compound .row > * + *,
+    .lk_info .add_product .form .info .row > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-----------------
+        Add product
+    -----------------*/
+    .add_product .price_setting .desc
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .add_product .price_setting .line
+    {
+        width: 217px !important;
+    }
+
+
+    .add_product .product_prices .product > *
+    {
+        width: 33.333% !important;
+    }
+
+    .add_product .product_prices .col_color
+    {
+        margin-top: 12px;
+    }
+
+
+
+    .add_product .add_xlsx .file
+    {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+
+    .add_product .add_xlsx .form .submit,
+    .add_product .add_xlsx .form .submit_btn
+    {
+        width: 100%;
+    }
 
 
 

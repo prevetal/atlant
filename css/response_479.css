@@ -103,6 +103,12 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
     .form .line
     {
         font-size: 14px;
@@ -317,6 +323,270 @@
     .checkout_info .totals_info .info .address br
     {
         display: none;
+    }
+
+
+
+    /*--------------
+        LK block
+    --------------*/
+    .lk_block .logout_btn
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Filter
+    ------------*/
+    .lk_info .filter .form .date .row .field
+    {
+        width: 100%;
+    }
+
+    .lk_info .filter .form .date .row .field + .field
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .lk_info .documents .document .col_price
+    {
+        margin-top: 8px;
+    }
+
+
+    .lk_info .documents .document .col_action
+    {
+        padding: 0;
+    }
+
+
+    .lk_info .documents .col_number,
+    .lk_info .documents .col_status,
+    .lk_info .documents .col_date,
+    .lk_info .documents .col_price,
+    .lk_info .documents .col_action
+    {
+        width: 50%;
+    }
+
+
+
+    /*----------------
+        Order info
+    ----------------*/
+    .order_info .product .thumb
+    {
+        width: 72px;
+        min-width: 72px;
+        height: 96px;
+    }
+
+
+    .order_info .product .info
+    {
+        width: calc(100% - 88px);
+    }
+
+
+    .order_info .product .buy
+    {
+        padding-left: 88px;
+    }
+
+    .order_info .product .total_price
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .lk_info .stats .amount
+    {
+        width: 52px;
+        min-width: 52px;
+        margin-right: 8px;
+    }
+
+
+
+    /*------------
+        Update
+    ------------*/
+    .lk_info .update .upload .btn
+    {
+        width: calc(100% + 2px);
+    }
+
+    .lk_info .update .upload input[type=file] + label
+    {
+        height: 80px;
+        padding-top: 39px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
+
+    /*----------------
+        Add prices
+    ----------------*/
+    .lk_info .add_prices .upload .btn
+    {
+        width: calc(100% + 2px);
+    }
+
+    .lk_info .add_prices .upload input[type=file] + label
+    {
+        height: 80px;
+        padding-top: 39px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
+
+    /*------------
+        Orders
+    ------------*/
+    .lk_info .supllier_order
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
+    .lk_info .orders .col_address
+    {
+        width: calc(50% - 8px);
+        min-width: 0;
+    }
+
+
+    .lk_info .orders .col_status
+    {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0;
+    }
+
+
+    .lk_info .supllier_order .col_products
+    {
+        width: calc(100% + 30px);
+        margin: 10px -15px -10px;
+        padding: 0 15px;
+    }
+
+
+    .lk_info .supllier_order .product
+    {
+        padding: 16px 0;
+    }
+
+
+    .lk_info .supllier_order .col_products .info
+    {
+        width: calc(100% - 96px);
+        padding-right: 36px;
+    }
+
+
+    .lk_info .supllier_order .col_products .model,
+    .lk_info .supllier_order .product .price,
+    .lk_info .supllier_order .col_products .amount,
+    .lk_info .supllier_order .col_products .price.total
+    {
+        width: 50%;
+    }
+
+
+
+    /*------------------------
+        LK products search
+    ------------------------*/
+    .lk_products .product .col_articul,
+    .lk_products .product .col_date,
+    .lk_products .product .col_activity,
+    .lk_products .product .col_price,
+    .lk_products .product .col_brand,
+    .lk_products .product .col_thing,
+    .lk_products .product .col_availability
+    {
+        width: calc(100% - 12px);
+    }
+
+    .lk_products .product .col_date
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*-----------------
+        Add product
+    -----------------*/
+    .lk_info .add_product .steps .step
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------------
+        Add product
+    -----------------*/
+    .add_product .price_setting .line
+    {
+        width: 100% !important;
+    }
+
+
+    .add_product .price_setting .submit
+    {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .add_product .price_setting .submit_btn
+    {
+        width: 100%;
+    }
+
+
+    .add_product .product_prices .product > *
+    {
+        width: 50% !important;
+    }
+
+    .add_product .product_prices .col_articul
+    {
+        margin-top: 12px;
+    }
+
+
+
+    .add_product .add_xlsx .btn
+    {
+        width: calc(100% + 2px);
+    }
+
+    .add_product .add_xlsx input[type=file] + label
+    {
+        height: 80px;
+        padding-top: 39px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
 
