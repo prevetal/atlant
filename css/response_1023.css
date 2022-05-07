@@ -494,6 +494,18 @@
 
 
 
+    /*---------------
+        Documents
+    ---------------*/
+    .lk_info .documents .col_date,
+    .lk_info .documents .col_price
+    {
+        width: 124px;
+        min-width: 124px;
+    }
+
+
+
     /*----------------
         Order info
     ----------------*/

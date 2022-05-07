@@ -186,6 +186,15 @@
 
 										<div class="data">
 											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check1">
+													<label for="document_check1">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
 												<div class="col_number" data-column="№">0000000</div>
 												<div class="col_date" data-column="Дата">08.12.2021</div>
 												<div class="col_price" data-column="Сумма">4460,03</div>
@@ -199,6 +208,15 @@
 											</a>
 
 											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check2">
+													<label for="document_check2">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
 												<div class="col_number" data-column="№">0000000</div>
 												<div class="col_date" data-column="Дата">08.12.2021</div>
 												<div class="col_price" data-column="Сумма">4460,03</div>
@@ -212,6 +230,15 @@
 											</a>
 
 											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check3">
+													<label for="document_check3">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
 												<div class="col_number" data-column="№">0000000</div>
 												<div class="col_date" data-column="Дата">08.12.2021</div>
 												<div class="col_price" data-column="Сумма">4460,03</div>
@@ -228,7 +255,7 @@
 
 
 									<div class="pagination">
-										<div class="row">
+										<div class="line">
 											<div class="links">
 												<a href="/" class="prev disabled">
 													<div class="icon"></div>
@@ -255,7 +282,7 @@
 											</form>
 										</div>
 
-										<div class="row">
+										<div class="line">
 											<div class="counts">
 												<div>Отмечено: <b>0 / 50</b></div>
 												<div>Всего: <b>155</b></div>
@@ -272,12 +299,358 @@
 
 
 								<div class="tab_content level1" id="tab2">
+									<div class="filter">
+										<div class="desc">Описание, какие документы собраны на вкладке.</div>
 
+										<form action="" class="form">
+											<div class="columns row">
+												<div class="line">
+													<div class="label">Статус</div>
+
+													<div class="field">
+														<select name="">
+															<option value="0" data-display="Все"></option>
+															<option value="1">Вариант 1</option>
+															<option value="2">Вариант 2</option>
+															<option value="3">Вариант 3</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="line date">
+													<div class="label">Период с</div>
+
+													<div class="row">
+														<div class="field">
+															<div class="prefix">с</div>
+
+															<input type="text" name="" value="" class="input date_input" placeholder="20.02.2021">
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_calendar"></use></svg>
+														</div>
+
+														<div class="field">
+															<div class="prefix">по</div>
+
+															<input type="text" name="" value="" class="input date_input" placeholder="20.02.2021">
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_calendar"></use></svg>
+														</div>
+													</div>
+												</div>
+
+												<div class="line search">
+													<div class="field">
+														<input type="text" name="" value="" class="input" placeholder="Поиск по номеру документа">
+
+														<button type="button" class="btn">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+
+
+									<div class="lk_block no_padding documents">
+										<div class="head no_margin titles">
+											<div class="col_number">№</div>
+											<div class="col_date">Дата</div>
+											<div class="col_price">Сумма, <span class="currency">a</span></div>
+											<div class="col_status">Статус</div>
+											<div class="col_action"></div>
+										</div>
+
+										<div class="data">
+											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check1">
+													<label for="document_check1">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
+												<div class="col_number" data-column="№">0000000</div>
+												<div class="col_date" data-column="Дата">08.12.2021</div>
+												<div class="col_price" data-column="Сумма">4460,03</div>
+												<div class="col_status" data-column="Статус">Новый</div>
+												<div class="col_action">
+													<div class="download">
+														<span>Скачать</span>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_download"></use></svg>
+													</div>
+												</div>
+											</a>
+
+											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check2">
+													<label for="document_check2">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
+												<div class="col_number" data-column="№">0000000</div>
+												<div class="col_date" data-column="Дата">08.12.2021</div>
+												<div class="col_price" data-column="Сумма">4460,03</div>
+												<div class="col_status" data-column="Статус">Новый</div>
+												<div class="col_action">
+													<div class="download">
+														<span>Скачать</span>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_download"></use></svg>
+													</div>
+												</div>
+											</a>
+
+											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check3">
+													<label for="document_check3">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
+												<div class="col_number" data-column="№">0000000</div>
+												<div class="col_date" data-column="Дата">08.12.2021</div>
+												<div class="col_price" data-column="Сумма">4460,03</div>
+												<div class="col_status" data-column="Статус">Новый</div>
+												<div class="col_action">
+													<div class="download">
+														<span>Скачать</span>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_download"></use></svg>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+
+									<div class="pagination">
+										<div class="line">
+											<div class="links">
+												<a href="/" class="prev disabled">
+													<div class="icon"></div>
+													<span>Назад</span>
+												</a>
+
+												<a class="active">1</a>
+												<a href="/">2</a>
+												<a href="/">3</a>
+
+												<a href="/" class="next">
+													<span>Вперёд</span>
+													<div class="icon"></div>
+												</a>
+											</div>
+
+											<form action="" class="form go_to">
+												<div class="field">
+													<div class="label">Перейти на страницу</div>
+													<input type="text" name="" value="" class="input" placeholder="2">
+												</div>
+
+												<button type="submit" class="submit_btn">Перейти</button>
+											</form>
+										</div>
+
+										<div class="line">
+											<div class="counts">
+												<div>Отмечено: <b>0 / 50</b></div>
+												<div>Всего: <b>155</b></div>
+											</div>
+
+											<div class="actions">
+												<div><button class="btn">Массовое редактирование</button></div>
+												<div><button class="btn">Деактивировать</button></div>
+												<div><button class="btn">Удалить</button></div>
+											</div>
+										</div>
+									</div>
 								</div>
 
 
 								<div class="tab_content level1" id="tab3">
+									<div class="filter">
+										<div class="desc">Описание, какие документы собраны на вкладке.</div>
 
+										<form action="" class="form">
+											<div class="columns row">
+												<div class="line">
+													<div class="label">Статус</div>
+
+													<div class="field">
+														<select name="">
+															<option value="0" data-display="Все"></option>
+															<option value="1">Вариант 1</option>
+															<option value="2">Вариант 2</option>
+															<option value="3">Вариант 3</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="line date">
+													<div class="label">Период с</div>
+
+													<div class="row">
+														<div class="field">
+															<div class="prefix">с</div>
+
+															<input type="text" name="" value="" class="input date_input" placeholder="20.02.2021">
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_calendar"></use></svg>
+														</div>
+
+														<div class="field">
+															<div class="prefix">по</div>
+
+															<input type="text" name="" value="" class="input date_input" placeholder="20.02.2021">
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_calendar"></use></svg>
+														</div>
+													</div>
+												</div>
+
+												<div class="line search">
+													<div class="field">
+														<input type="text" name="" value="" class="input" placeholder="Поиск по номеру документа">
+
+														<button type="button" class="btn">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+
+
+									<div class="lk_block no_padding documents">
+										<div class="head no_margin titles">
+											<div class="col_number">№</div>
+											<div class="col_date">Дата</div>
+											<div class="col_price">Сумма, <span class="currency">a</span></div>
+											<div class="col_status">Статус</div>
+											<div class="col_action"></div>
+										</div>
+
+										<div class="data">
+											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check1">
+													<label for="document_check1">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
+												<div class="col_number" data-column="№">0000000</div>
+												<div class="col_date" data-column="Дата">08.12.2021</div>
+												<div class="col_price" data-column="Сумма">4460,03</div>
+												<div class="col_status" data-column="Статус">Новый</div>
+												<div class="col_action">
+													<div class="download">
+														<span>Скачать</span>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_download"></use></svg>
+													</div>
+												</div>
+											</a>
+
+											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check2">
+													<label for="document_check2">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
+												<div class="col_number" data-column="№">0000000</div>
+												<div class="col_date" data-column="Дата">08.12.2021</div>
+												<div class="col_price" data-column="Сумма">4460,03</div>
+												<div class="col_status" data-column="Статус">Новый</div>
+												<div class="col_action">
+													<div class="download">
+														<span>Скачать</span>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_download"></use></svg>
+													</div>
+												</div>
+											</a>
+
+											<a href="/" class="document">
+												<div class="select">
+													<input type="checkbox" name="document" id="document_check3">
+													<label for="document_check3">
+														<div class="check">
+															<img src="images/ic_check.svg" alt="">
+														</div>
+													</label>
+												</div>
+
+												<div class="col_number" data-column="№">0000000</div>
+												<div class="col_date" data-column="Дата">08.12.2021</div>
+												<div class="col_price" data-column="Сумма">4460,03</div>
+												<div class="col_status" data-column="Статус">Новый</div>
+												<div class="col_action">
+													<div class="download">
+														<span>Скачать</span>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_download"></use></svg>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+
+									<div class="pagination">
+										<div class="line">
+											<div class="links">
+												<a href="/" class="prev disabled">
+													<div class="icon"></div>
+													<span>Назад</span>
+												</a>
+
+												<a class="active">1</a>
+												<a href="/">2</a>
+												<a href="/">3</a>
+
+												<a href="/" class="next">
+													<span>Вперёд</span>
+													<div class="icon"></div>
+												</a>
+											</div>
+
+											<form action="" class="form go_to">
+												<div class="field">
+													<div class="label">Перейти на страницу</div>
+													<input type="text" name="" value="" class="input" placeholder="2">
+												</div>
+
+												<button type="submit" class="submit_btn">Перейти</button>
+											</form>
+										</div>
+
+										<div class="line">
+											<div class="counts">
+												<div>Отмечено: <b>0 / 50</b></div>
+												<div>Всего: <b>155</b></div>
+											</div>
+
+											<div class="actions">
+												<div><button class="btn">Массовое редактирование</button></div>
+												<div><button class="btn">Деактивировать</button></div>
+												<div><button class="btn">Удалить</button></div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</section>
 						</section>

@@ -526,14 +526,17 @@ button
 }
 
 
-.pagination .row
+.pagination .line
 {
+    display: flex;
+
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
-.pagination .row + .row
+.pagination .line + .line
 {
     margin-top: 20px;
 }
@@ -5957,22 +5960,6 @@ aside .lk_menu .logout_btn .icon
 }
 
 
-.lk_block .bottom
-{
-    display: flex;
-
-    margin-top: 18px;
-    padding-top: 16px;
-
-    border-top: 1px solid #ececec;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-
 
 /*---------------
     User info
@@ -6008,106 +5995,6 @@ aside .lk_menu .logout_btn .icon
 .lk_info .user_info .item .val
 {
     width: calc(100% - 272px);
-}
-
-
-.lk_info .user_info .agree
-{
-    width: 100%;
-}
-
-
-.lk_info .user_info .agree input
-{
-    display: none;
-}
-
-.lk_info .user_info .agree label
-{
-    font-size: 14px;
-    line-height: 20px;
-
-    position: relative;
-
-    display: flex;
-
-    min-height: 20px;
-    padding-left: 30px;
-
-    cursor: pointer;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-
-.lk_info .user_info .agree label a
-{
-    color: #0098ff;
-
-    text-decoration: none;
-}
-
-
-.lk_info .user_info .agree label .check
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: flex;
-
-    width: 20px;
-    height: 20px;
-
-    transition: opacity .2s linear;
-
-    opacity: 0;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-.lk_info .user_info .agree label .check img
-{
-    display: block;
-
-    width: 11px;
-    height: 8px;
-}
-
-
-.lk_info .user_info .agree label:before
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-
-    content: '';
-    transition: .2s linear;
-
-    border: 1px solid #dadada;
-    border-radius: 5px;
-}
-
-.lk_info .user_info .agree input:checked + label:before
-{
-    border-color: #0098ff;
-    background: #0098ff;
-}
-
-.lk_info .user_info .agree input:checked + label .check
-{
-    opacity: 1;
 }
 
 
@@ -6658,6 +6545,7 @@ aside .lk_menu .logout_btn .icon
     display: flex;
 
     margin: 0 18px;
+    padding-left: 38px;
 
     white-space: nowrap;
 
@@ -6686,9 +6574,11 @@ aside .lk_menu .logout_btn .icon
     font-weight: 500;
     line-height: 28px;
 
+    position: relative;
+
     display: flex;
 
-    padding: 12px 18px;
+    padding: 12px 18px 12px 54px;
 
     transition: .2s linear;
     white-space: nowrap;
@@ -6703,6 +6593,104 @@ aside .lk_menu .logout_btn .icon
 .lk_info .documents .document > * + *
 {
     margin-left: 24px;
+}
+
+
+.lk_info .documents .document .select
+{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+}
+
+.lk_info .documents .document .select + *
+{
+    margin-left: 0;
+}
+
+
+.lk_info .documents .document .select input[type=checkbox]
+{
+    display: none;
+}
+
+.lk_info .documents .document .select label
+{
+    font-size: 14px;
+    line-height: 20px;
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 20px;
+    padding-left: 30px;
+
+    cursor: pointer;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.lk_info .documents .document .select label .check
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 20px;
+    height: 20px;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.lk_info .documents .document .select label .check img
+{
+    display: block;
+
+    width: 11px;
+    height: 8px;
+}
+
+.lk_info .documents .document .select label:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    content: '';
+    transition: .2s linear;
+
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.lk_info .documents .document .select input:checked + label:before
+{
+    border-color: #0098ff;
+    background: #0098ff;
+}
+
+.lk_info .documents .document .select input:checked + label .check
+{
+    opacity: 1;
 }
 
 
