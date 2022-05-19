@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="css/swiper.css" async>
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/air-datepicker.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1147.css" media="print, (max-width: 1147px)" async>
@@ -62,10 +63,125 @@
 								<img src="images/logo.png" alt="">
 							</div>
 
-							<a href="/" class="catalog_link">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
-								<span>Каталог</span>
-							</a>
+							<div class="catalog modal_cont">
+								<button class="btn mini_modal_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+									<span>Каталог</span>
+								</button>
+
+								<div class="mini_modal tabs_container">
+									<div class="row">
+										<div class="tabs">
+											<div class="row">
+												<div><button data-content="#catalog_tab1" data-level="level1" class="active">Одежда</button></div>
+
+												<div><button data-content="#catalog_tab2" data-level="level1">Обувь</button></div>
+
+												<div><button data-content="#catalog_tab3" data-level="level1">Дом</button></div>
+
+												<div><button data-content="#catalog_tab4" data-level="level1">Новый год</button></div>
+
+												<div><button data-content="#catalog_tab5" data-level="level1">Красота</button></div>
+
+												<div><button data-content="#catalog_tab6" data-level="level1">Аксессуары</button></div>
+											</div>
+										</div>
+
+
+										<div class="tab_content level1 active" id="catalog_tab1">
+											<div class="row">
+												<div class="col">
+													<div class="main">
+														<a href="/">Женское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Босоножки, сандалии</a></div>
+														<div><a href="/">Ботильоны</a></div>
+														<div><a href="/">Ботфорты</a></div>
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Резиновые сапоги</a></div>
+														<div><a href="/">Сапоги и ботитнки</a></div>
+														<div><a href="/">Сланцы</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col">
+													<div class="main">
+														<a href="/">Мужское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Рабочая обувь</a></div>
+														<div><a href="/">Сандалии</a></div>
+														<div><a href="/">Сапоги и ботинки</a></div>
+														<div><a href="/">Сланци и тапочки</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col">
+													<div class="main">
+														<a href="/">Детское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Рабочая обувь</a></div>
+														<div><a href="/">Сандалии</a></div>
+														<div><a href="/">Сапоги и ботинки</a></div>
+														<div><a href="/">Сланци и тапочки</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col border">
+													<div class="main">
+														<a href="/">Бренды</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Название 1</a></div>
+														<div><a href="/">Название 2</a></div>
+														<div><a href="/">Название 3</a></div>
+														<div><a href="/">Название 4</a></div>
+														<div><a href="/">Название 5</a></div>
+														<div><a href="/">Название 6</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab2">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab3">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab4">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab5">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab6">
+
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<div class="search">
 								<form action="">
@@ -222,23 +338,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product1_color" id="product1_color1">
-														<label for="product1_color1">
+														<label class="disabled">
+															<input type="radio" name="product1_color" disabled>
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product1_color" id="product1_color2">
-														<label for="product1_color2">
+														<label>
+															<input type="radio" name="product1_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product1_color" id="product1_color3">
-														<label for="product1_color3">
+														<label>
+															<input type="radio" name="product1_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product1_color" id="product1_color4">
-														<label for="product1_color4">
+														<label>
+															<input type="radio" name="product1_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -248,17 +368,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product1_size" id="product1_size1" checked>
-														<label for="product1_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product1_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product1_size" id="product1_size2">
-														<label for="product1_size2" class="radio_btn">M</label>
+														<label class="radio_btn disabled">
+															<input type="radio" name="product1_size" disabled>
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product1_size" id="product1_size3">
-														<label for="product1_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product1_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product1_size" id="product1_size4">
-														<label for="product1_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product1_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -303,23 +435,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product2_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product2_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product2_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product2_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -329,17 +465,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product2_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product2_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product2_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product2_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -384,23 +532,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product3_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product3_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product3_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product3_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -410,17 +562,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product3_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product3_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product3_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product3_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -467,23 +631,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product4_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product4_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product4_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product4_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -493,17 +661,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product4_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product4_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product4_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product4_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -550,23 +730,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product5_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product5_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product5_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product5_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -576,17 +760,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product5_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product5_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product5_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product5_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -631,23 +827,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product6_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product6_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product6_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product6_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -657,17 +857,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product6_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product6_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product6_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product6_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -712,23 +924,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product7_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product7_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product7_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product7_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -738,17 +954,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product7_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product7_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product7_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product7_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -793,23 +1021,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product8_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product8_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product8_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product8_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -819,17 +1051,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product8_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product8_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product8_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product8_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -876,23 +1120,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product9_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product9_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product9_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product9_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -902,17 +1150,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product9_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product9_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product9_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product9_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -959,23 +1219,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product10_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product10_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product10_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product10_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -985,17 +1249,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product10_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product10_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product10_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product10_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1071,7 +1347,7 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker green">top</div>
 										</div>
 
 										<div class="thumb">
@@ -1102,23 +1378,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product1_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product1_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product1_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product1_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1128,17 +1408,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product1_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product1_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product1_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product1_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1152,7 +1444,7 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker green">top</div>
 										</div>
 
 										<div class="thumb">
@@ -1183,23 +1475,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product2_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product2_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product2_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product2_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1209,17 +1505,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product2_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product2_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product2_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product2_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1233,7 +1541,7 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker green">top</div>
 										</div>
 
 										<div class="thumb">
@@ -1264,23 +1572,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product3_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product3_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product3_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product3_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1290,17 +1602,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product3_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product3_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product3_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product3_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1314,7 +1638,8 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker yellow">sale</div>
+											<div class="sticker red">-10%</div>
 										</div>
 
 										<div class="thumb">
@@ -1346,23 +1671,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product4_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product4_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product4_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product4_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1372,17 +1701,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product4_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product4_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product4_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product4_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1396,7 +1737,8 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker yellow">sale</div>
+											<div class="sticker red">-10%</div>
 										</div>
 
 										<div class="thumb">
@@ -1428,23 +1770,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product5_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product5_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product5_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product5_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1454,17 +1800,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product5_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product5_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product5_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product5_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1478,7 +1836,7 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker green">top</div>
 										</div>
 
 										<div class="thumb">
@@ -1509,23 +1867,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product6_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product6_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product6_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product6_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1535,17 +1897,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product6_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product6_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product6_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product6_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1559,7 +1933,7 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker green">top</div>
 										</div>
 
 										<div class="thumb">
@@ -1590,23 +1964,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product7_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product7_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product7_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product7_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1616,17 +1994,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product7_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product7_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product7_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product7_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1640,7 +2030,7 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker green">top</div>
 										</div>
 
 										<div class="thumb">
@@ -1671,23 +2061,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product8_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product8_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product8_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product8_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1697,17 +2091,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product8_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product8_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product8_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product8_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1721,7 +2127,8 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker yellow">sale</div>
+											<div class="sticker red">-10%</div>
 										</div>
 
 										<div class="thumb">
@@ -1753,23 +2160,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product9_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product9_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product9_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product9_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1779,17 +2190,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product9_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product9_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product9_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product9_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -1803,7 +2226,8 @@
 								<div class="slide swiper-slide">
 									<div class="product">
 										<div class="stickers">
-											<div class="sticker blue">new</div>
+											<div class="sticker yellow">sale</div>
+											<div class="sticker red">-10%</div>
 										</div>
 
 										<div class="thumb">
@@ -1835,23 +2259,27 @@
 													<div class="title">Цвет:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_color" id="product_color1">
-														<label for="product_color1">
+														<label>
+															<input type="radio" name="product10_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color1.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color2">
-														<label for="product_color2">
+														<label>
+															<input type="radio" name="product10_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color2.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color3">
-														<label for="product_color3">
+														<label>
+															<input type="radio" name="product10_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color3.svg" alt="">
 														</label>
 
-														<input type="radio" name="product_color" id="product_color4">
-														<label for="product_color4">
+														<label>
+															<input type="radio" name="product10_color">
+															<div class="border"></div>
 															<img src="images/tmp/ic_product_color4.png" alt="">
 														</label>
 													</div>
@@ -1861,17 +2289,29 @@
 													<div class="title">Размер:</div>
 
 													<div class="vals">
-														<input type="radio" name="product_size" id="product_size1" checked>
-														<label for="product_size1" class="radio_btn">S</label>
+														<label class="radio_btn">
+															<input type="radio" name="product10_size" checked>
+															<div class="check"></div>
+															<span>S</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size2">
-														<label for="product_size2" class="radio_btn">M</label>
+														<label class="radio_btn">
+															<input type="radio" name="product10_size">
+															<div class="check"></div>
+															<span>M</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size3">
-														<label for="product_size3" class="radio_btn">L</label>
+														<label class="radio_btn">
+															<input type="radio" name="product10_size">
+															<div class="check"></div>
+															<span>L</span>
+														</label>
 
-														<input type="radio" name="product_size" id="product_size4">
-														<label for="product_size4" class="radio_btn">XL</label>
+														<label class="radio_btn">
+															<input type="radio" name="product10_size">
+															<div class="check"></div>
+															<span>XL</span>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -2185,6 +2625,7 @@
 		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/sticky-kit.min.js"></script>
 		<script src="js/chart.min.js"></script>
+		<script src="js/air-datepicker.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

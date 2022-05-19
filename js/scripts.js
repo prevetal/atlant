@@ -531,6 +531,24 @@ $(() => {
 	}
 
 
+	// ЛК - редактирование данных
+	$('.lk_block .edit_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.lk_block')
+
+		parent.addClass('form')
+	})
+
+	$('.lk_block .save_btn').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.lk_block')
+
+		parent.removeClass('form')
+	})
+
+
 
 	// Отправка форм
 	$('body').on('submit', '#add_review_modal form', function (e) {
@@ -543,6 +561,23 @@ $(() => {
 			type: 'inline'
 		}])
 	})
+
+
+	// Календарь
+	const dateInputs = document.querySelectorAll('.date_input')
+
+	if (dateInputs) {
+		dateInputs.forEach(el => {
+			new AirDatepicker(el, {
+				container: el.closest('.field'),
+				autoClose: true,
+				navTitles: {
+					days: 'MMMM yyyy'
+				},
+				position: el.getAttribute('data-position')
+			})
+		})
+	}
 })
 
 

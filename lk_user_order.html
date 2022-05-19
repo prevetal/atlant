@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="css/swiper.css" async>
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/air-datepicker.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1147.css" media="print, (max-width: 1147px)" async>
@@ -62,10 +63,125 @@
 								<img src="images/logo.png" alt="">
 							</a>
 
-							<a href="/" class="catalog_link">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
-								<span>Каталог</span>
-							</a>
+							<div class="catalog modal_cont">
+								<button class="btn mini_modal_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+									<span>Каталог</span>
+								</button>
+
+								<div class="mini_modal tabs_container">
+									<div class="row">
+										<div class="tabs">
+											<div class="row">
+												<div><button data-content="#catalog_tab1" data-level="level1" class="active">Одежда</button></div>
+
+												<div><button data-content="#catalog_tab2" data-level="level1">Обувь</button></div>
+
+												<div><button data-content="#catalog_tab3" data-level="level1">Дом</button></div>
+
+												<div><button data-content="#catalog_tab4" data-level="level1">Новый год</button></div>
+
+												<div><button data-content="#catalog_tab5" data-level="level1">Красота</button></div>
+
+												<div><button data-content="#catalog_tab6" data-level="level1">Аксессуары</button></div>
+											</div>
+										</div>
+
+
+										<div class="tab_content level1 active" id="catalog_tab1">
+											<div class="row">
+												<div class="col">
+													<div class="main">
+														<a href="/">Женское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Босоножки, сандалии</a></div>
+														<div><a href="/">Ботильоны</a></div>
+														<div><a href="/">Ботфорты</a></div>
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Резиновые сапоги</a></div>
+														<div><a href="/">Сапоги и ботитнки</a></div>
+														<div><a href="/">Сланцы</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col">
+													<div class="main">
+														<a href="/">Мужское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Рабочая обувь</a></div>
+														<div><a href="/">Сандалии</a></div>
+														<div><a href="/">Сапоги и ботинки</a></div>
+														<div><a href="/">Сланци и тапочки</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col">
+													<div class="main">
+														<a href="/">Детское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Рабочая обувь</a></div>
+														<div><a href="/">Сандалии</a></div>
+														<div><a href="/">Сапоги и ботинки</a></div>
+														<div><a href="/">Сланци и тапочки</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col border">
+													<div class="main">
+														<a href="/">Бренды</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Название 1</a></div>
+														<div><a href="/">Название 2</a></div>
+														<div><a href="/">Название 3</a></div>
+														<div><a href="/">Название 4</a></div>
+														<div><a href="/">Название 5</a></div>
+														<div><a href="/">Название 6</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab2">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab3">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab4">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab5">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab6">
+
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<div class="search">
 								<form action="">
@@ -288,7 +404,7 @@
 									</div>
 								</div>
 
-								<button class="cancel_btn">Отменить заказ</button>
+								<button class="cancel_btn modal_btn" data-content="#confirm_modal">Отменить заказ</button>
 							</section>
 						</section>
 					</div>
@@ -828,6 +944,18 @@
 		</section>
 
 
+		<section class="modal" id="confirm_modal">
+			<div class="block_head">
+				<div class="title">Вы уверенны, что хотите отменить заказ?</div>
+			</div>
+
+			<div class="btns">
+				<button class="btn blue close_btn">Нет</button>
+				<button class="btn red">Да</button>
+			</div>
+		</section>
+
+
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
@@ -837,6 +965,7 @@
 		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/sticky-kit.min.js"></script>
 		<script src="js/chart.min.js"></script>
+		<script src="js/air-datepicker.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

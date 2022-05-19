@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="css/swiper.css" async>
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/air-datepicker.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1147.css" media="print, (max-width: 1147px)" async>
@@ -62,10 +63,125 @@
 								<img src="images/logo.png" alt="">
 							</a>
 
-							<a href="/" class="catalog_link">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
-								<span>Каталог</span>
-							</a>
+							<div class="catalog modal_cont">
+								<button class="btn mini_modal_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+									<span>Каталог</span>
+								</button>
+
+								<div class="mini_modal tabs_container">
+									<div class="row">
+										<div class="tabs">
+											<div class="row">
+												<div><button data-content="#catalog_tab1" data-level="level1" class="active">Одежда</button></div>
+
+												<div><button data-content="#catalog_tab2" data-level="level1">Обувь</button></div>
+
+												<div><button data-content="#catalog_tab3" data-level="level1">Дом</button></div>
+
+												<div><button data-content="#catalog_tab4" data-level="level1">Новый год</button></div>
+
+												<div><button data-content="#catalog_tab5" data-level="level1">Красота</button></div>
+
+												<div><button data-content="#catalog_tab6" data-level="level1">Аксессуары</button></div>
+											</div>
+										</div>
+
+
+										<div class="tab_content level1 active" id="catalog_tab1">
+											<div class="row">
+												<div class="col">
+													<div class="main">
+														<a href="/">Женское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Босоножки, сандалии</a></div>
+														<div><a href="/">Ботильоны</a></div>
+														<div><a href="/">Ботфорты</a></div>
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Резиновые сапоги</a></div>
+														<div><a href="/">Сапоги и ботитнки</a></div>
+														<div><a href="/">Сланцы</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col">
+													<div class="main">
+														<a href="/">Мужское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Рабочая обувь</a></div>
+														<div><a href="/">Сандалии</a></div>
+														<div><a href="/">Сапоги и ботинки</a></div>
+														<div><a href="/">Сланци и тапочки</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col">
+													<div class="main">
+														<a href="/">Детское</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Кроссоки и кеды</a></div>
+														<div><a href="/">Рабочая обувь</a></div>
+														<div><a href="/">Сандалии</a></div>
+														<div><a href="/">Сапоги и ботинки</a></div>
+														<div><a href="/">Сланци и тапочки</a></div>
+														<div><a href="/">Туфли</a></div>
+													</div>
+												</div>
+
+												<div class="col border">
+													<div class="main">
+														<a href="/">Бренды</a>
+													</div>
+
+													<div class="sub">
+														<div><a href="/">Название 1</a></div>
+														<div><a href="/">Название 2</a></div>
+														<div><a href="/">Название 3</a></div>
+														<div><a href="/">Название 4</a></div>
+														<div><a href="/">Название 5</a></div>
+														<div><a href="/">Название 6</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab2">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab3">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab4">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab5">
+
+										</div>
+
+
+										<div class="tab_content level1" id="catalog_tab6">
+
+										</div>
+									</div>
+								</div>
+							</div>
 
 							<div class="search">
 								<form action="">
@@ -181,15 +297,22 @@
 								<div class="head no_margin">
 									<div class="title">ООО «Reima»</div>
 
-									<button class="edit_btn edit_pass_btn">
+									<button class="edit_btn edit_pass_btn modal_btn" data-content="#edit_pass_modal">
 										<span>Сменить пароль</span>
+									</button>
+
+									<button class="save_btn">
+										<span>Сохраннить</span>
 									</button>
 								</div>
 
 								<div class="data">
 									<div class="item">
 										<div class="name">E-mail</div>
-										<div class="val">mail@mail.ru</div>
+										<div class="val">
+											<span>mail@mail.ru</span>
+											<input type="email" class="input" value="mail@mail.ru" name="">
+										</div>
 
 										<button class="edit_btn">
 											<span>Редактировать</span>
@@ -199,7 +322,10 @@
 
 									<div class="item">
 										<div class="name">Телефон</div>
-										<div class="val">+7 (000) 000-00-00</div>
+										<div class="val">
+											<span>+7 (000) 000-00-00</span>
+											<input type="tek" class="input" value="+7 (000) 000-00-00" name="">
+										</div>
 
 										<button class="edit_btn">
 											<span>Редактировать</span>
@@ -218,57 +344,91 @@
 										<span>Редактировать</span>
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
 									</button>
+
+									<button class="save_btn">
+										<span>Сохраннить</span>
+									</button>
 								</div>
 
 								<div class="data">
 									<div class="item">
 										<div class="name">E-mail</div>
-										<div class="val">Россия</div>
+										<div class="val">
+											<span>Россия</span>
+											<input type="text" class="input" value="Россия" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">Форма организации</div>
-										<div class="val">ИП с НДС</div>
+										<div class="val">
+											<span>ИП с НДС</span>
+											<input type="text" class="input" value="ИП с НДС" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">ИНН</div>
-										<div class="val">00000000000</div>
+										<div class="val">
+											<span>00000000000</span>
+											<input type="text" class="input" value="00000000000" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">КПП</div>
-										<div class="val">0000000000000</div>
+										<div class="val">
+											<span>0000000000000</span>
+											<input type="text" class="input" value="0000000000000" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">Наименование компании</div>
-										<div class="val">ООО "Рога и копыта"</div>
+										<div class="val">
+											<span>ООО "Рога и копыта"</span>
+											<input type="text" class="input" value='ООО "Рога и копыта' name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">ФИО руководителя</div>
-										<div class="val">Петров Петр Петрович</div>
+										<div class="val">
+											<span>Петров Петр Петрович</span>
+											<input type="text" class="input" value="Петров Петр Петрович" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">Юридический адрес</div>
-										<div class="val">Московская область, г. Москва, ул. Новая, д. 1</div>
+										<div class="val">
+											<span>Московская область, г. Москва, ул. Новая, д. 1</span>
+											<input type="text" class="input" value="Московская область, г. Москва, ул. Новая, д. 1" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">Физический адрес</div>
-										<div class="val">Московская область, г. Москва, ул. Новая, д. 2</div>
+										<div class="val">
+											<span>Московская область, г. Москва, ул. Новая, д. 2</span>
+											<input type="text" class="input" value="Московская область, г. Москва, ул. Новая, д. 2" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">Почтовый адрес</div>
-										<div class="val">Московская область, г. Москва, ул. Новая, д. 1</div>
+										<div class="val">
+											<span>Московская область, г. Москва, ул. Новая, д. 1</span>
+											<input type="text" class="input" value="Московская область, г. Москва, ул. Новая, д. 1" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">Расчетный счет</div>
-										<div class="val">00000000000</div>
+										<div class="val">
+											<span>00000000000</span>
+											<input type="text" class="input" value="00000000000" name="">
+										</div>
 									</div>
 								</div>
 							</section>
@@ -282,22 +442,35 @@
 										<span>Редактировать</span>
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
 									</button>
+
+									<button class="save_btn">
+										<span>Сохраннить</span>
+									</button>
 								</div>
 
 								<div class="data">
 									<div class="item">
 										<div class="name">ФИО контактного лица</div>
-										<div class="val">Иванов Иван Иванович</div>
+										<div class="val">
+											<span>Иванов Иван Иванович</span>
+											<input type="text" class="input" value="Иванов Иван Иванович" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">Телефон</div>
-										<div class="val">8 (000) 000-00-00</div>
+										<div class="val">
+											<span>8 (000) 000-00-00</span>
+											<input type="tel" class="input" value="8 (000) 000-00-00" name="">
+										</div>
 									</div>
 
 									<div class="item">
 										<div class="name">Email</div>
-										<div class="val">support@mail.ru</div>
+										<div class="val">
+											<span>support@mail.ru</span>
+											<input type="email" class="input" value="support@mail.ru" name="">
+										</div>
 									</div>
 								</div>
 							</section>
@@ -839,6 +1012,33 @@
 		</section>
 
 
+		<section class="modal" id="edit_pass_modal">
+			<div class="block_head">
+				<div class="title">Восстановление пароля</div>
+
+				<div class="desc">Придумайте новый пароль</div>
+			</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Новый пароль">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Повторите пароль">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Сохранить и войти</button>
+				</div>
+			</form>
+		</section>
+
+
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
@@ -848,6 +1048,7 @@
 		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/sticky-kit.min.js"></script>
 		<script src="js/chart.min.js"></script>
+		<script src="js/air-datepicker.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

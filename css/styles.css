@@ -767,15 +767,22 @@ button
 
 .pagination .actions
 {
-    color: #0098ff;
+    color: #fff;
     font-weight: 500;
     line-height: 24px;
 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
     display: flex;
 
-    margin-left: auto;
+    width: 100%;
+    padding: 24px;
 
-    justify-content: flex-start;
+    background: #0098ff;
+
+    justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
@@ -783,7 +790,40 @@ button
 
 .pagination .actions > * + *
 {
-    margin-left: 24px;
+    margin-left: 40px;
+}
+
+
+.pagination .actions .btn
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.pagination .actions .icon
+{
+    display: block;
+
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+}
+
+.pagination .actions .deactivate_btn .icon
+{
+    width: 29px;
+    height: 28px;
+}
+
+.pagination .actions .delete_btn .icon
+{
+    width: 19px;
+    height: 21px;
 }
 
 
@@ -821,6 +861,167 @@ button
     pointer-events: auto;
 
     opacity: 1;
+}
+
+
+
+/*----------------
+    Datepicker
+----------------*/
+.air-datepicker
+{
+    box-sizing: border-box;
+    width: 280px;
+    padding: 18px;
+
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 0 rgba(154, 214, 255, .5);
+
+    --adp-day-cell-height: 35px;
+    --adp-month-cell-height: 35px;
+}
+
+
+.air-datepicker--pointer
+{
+    display: none;
+}
+
+
+.air-datepicker-nav
+{
+    display: flex;
+
+    padding: 0;
+
+    border: none;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.air-datepicker-nav--action,
+.air-datepicker-nav--action:hover
+{
+    color: #fff;
+
+    position: relative;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+
+    background: none;
+}
+
+.air-datepicker-nav--action svg
+{
+    position: absolute;
+    top: -4px;
+    left: -4px;
+
+    display: block;
+}
+
+.air-datepicker-nav--action path
+{
+    fill: none;
+    stroke: #dadada;
+    stroke-width: 1px;
+}
+
+
+.air-datepicker-nav--title,
+.air-datepicker-nav--title:hover
+{
+    color: #393939;
+    font-family: var(--font_family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+    padding: 0;
+
+    text-align: center;
+
+    background: none;
+}
+
+
+.air-datepicker--content
+{
+    margin-top: 16px;
+    padding: 0;
+}
+
+
+.air-datepicker-body--day-names
+{
+    margin: 0 0 10px;
+}
+
+.air-datepicker-body--day-name
+{
+    color: #393939;
+    font-family: var(--font_family);
+    font-size: 13px;
+    line-height: 17px;
+
+    text-align: center;
+    text-transform: none;
+}
+
+
+.air-datepicker-cell,
+.air-datepicker-cell.-current-,
+.air-datepicker-cell.-day-.-other-month-,
+.air-datepicker-cell.-year-.-other-decade-
+{
+    color: #393939 !important;
+    font-family: var(--font_family);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 35px;
+
+    position: relative;
+
+    transition: .2s linear;
+
+    border-radius: 5px !important;
+    background: none;
+}
+
+.air-datepicker-cell.-selected-,
+.air-datepicker-cell.-focus-,
+.air-datepicker-cell.-selected-.-focus-,
+.air-datepicker-cell.-selected-.-current-,
+.air-datepicker-cell.-day-.-other-month-.-focus-,
+.air-datepicker-cell.-year-.-other-decade-.-focus-,
+.air-datepicker-cell.-day-.-other-month-.-current-,
+.air-datepicker-cell.-year-.-other-decade-.-current-,
+.air-datepicker-cell.-in-range-,
+.air-datepicker-cell.-in-range-.-focus-,
+.air-datepicker-cell.-range-from-,
+.air-datepicker-cell.-range-to-,
+.-in-range-.air-datepicker-cell.-day-.-other-month-,
+.-in-range-.air-datepicker-cell.-year-.-other-decade-,
+.-selected-.air-datepicker-cell.-day-.-other-month-,
+.-selected-.air-datepicker-cell.-year-.-other-decade-,
+.-selected-.air-datepicker-cell.-day-.-other-month-.-focus-,
+.-selected-.air-datepicker-cell.-year-.-other-decade-.-focus-
+{
+    color: #393939 !important;
+
+    border-color: transparent;
+    background: #dcf1ff;
 }
 
 
@@ -870,6 +1071,8 @@ header .info
 
 header .info .cont
 {
+    position: relative;
+
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -965,7 +1168,13 @@ header .logo img
 
 
 
-header .catalog_link
+header .catalog
+{
+    position: static;
+}
+
+
+header .catalog .btn
 {
     color: #fff;
     line-height: 18px;
@@ -985,13 +1194,200 @@ header .catalog_link
     flex-wrap: wrap;
 }
 
-header .catalog_link .icon
+
+header .catalog .btn .icon
 {
     display: block;
 
     width: 18px;
     height: 18px;
     margin-right: 13px;
+}
+
+header .catalog .btn .icon + .icon
+{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    margin-left: 1px;
+}
+
+
+header .catalog .btn .icon + .icon,
+header .catalog .btn.active .icon
+{
+    display: none;
+}
+
+header .catalog .btn.active .icon + .icon
+{
+    display: block;
+}
+
+
+header .catalog .mini_modal
+{
+    top: calc(100% + 44px);
+    left: 24px;
+
+    width: 1100px;
+    max-width: calc(100vw - 48px);
+
+    border-radius: 5px;
+    background-color: rgb(220, 241, 255);
+    box-shadow: 0 0 10px 0 rgba(154, 214, 255, .5);
+}
+
+header .catalog .mini_modal.active
+{
+    top: calc(100% + 20px);
+}
+
+
+header .catalog .mini_modal > .row
+{
+    display: none;
+
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+header .catalog .mini_modal.active > .row
+{
+    display: flex;
+}
+
+
+header .catalog .tabs
+{
+    display: block;
+
+    width: 180px;
+    max-width: 100%;
+    margin: 0 auto 0 0;
+    padding: 24px;
+
+    border-radius: 5px 0 0 5px;
+    background: #fff;
+}
+
+
+header .catalog .tabs .row
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header .catalog .tabs .row > * + *
+{
+    margin-top: 16px;
+}
+
+
+header .catalog .tabs button
+{
+    color: var(--text_color);
+
+    margin: 0;
+}
+
+
+header .catalog .tab_content
+{
+    width: 0;
+}
+
+header .catalog .tab_content.active
+{
+    width: calc(100% - 180px);
+    padding: 24px;
+}
+
+
+header .catalog .tab_content .row
+{
+    display: flex;
+
+    margin-bottom: -40px;
+    margin-left: -53px;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+header .catalog .tab_content .row > *
+{
+    width: calc(25% - 53px);
+    margin-bottom: 40px;
+    margin-left: 53px;
+}
+
+
+header .catalog .col
+{
+    position: relative;
+}
+
+header .catalog .col.border:before
+{
+    position: absolute;
+    top: 0;
+    left: -26px;
+
+    display: block;
+
+    width: 1px;
+    height: 100%;
+
+    content: '';
+
+    background: #fff;
+}
+
+
+header .catalog .main
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+header .catalog .main a
+{
+    color: currentColor;
+
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+}
+
+
+header .catalog .sub > * + *
+{
+    margin-top: 12px;
+}
+
+header .catalog .sub a
+{
+    color: currentColor;
+    font-size: 15px;
+
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+header .catalog .sub a:hover,
+header .catalog .sub a.active
+{
+    color: #0098ff;
 }
 
 
@@ -3114,12 +3510,85 @@ aside .lk_menu .logout_btn .icon
 }
 
 
+.products .product .option label .border
+{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    display: block;
+
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+
+    content: '';
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    border: 1px solid var(--text_color);
+}
+
+.products .product .option input:checked + .border
+{
+    opacity: 1;
+}
+
+
 .products .product .option label.radio_btn
 {
     padding-left: 24px;
 }
 
-.products .product .option label.radio_btn:before
+
+.products .product .option label.disabled
+{
+    cursor: default;
+    pointer-events: none;
+
+    opacity: .4;
+}
+
+.products .product .option label.disabled:before,
+.products .product .option label.disabled:after
+{
+    position: absolute;
+    top: -5%;
+    right: 0;
+    bottom: 0;
+    left: -5%;
+
+    display: block;
+
+    width: 110%;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(45deg);
+
+    background: var(--text_color);
+}
+
+.products .product .option label.disabled:after
+{
+    transform: rotate(-45deg);
+}
+
+.products .product .option label.radio_btn.disabled:before,
+.products .product .option label.radio_btn.disabled:after
+{
+    display: none;
+}
+
+
+.products .product .option label.hidden
+{
+    display: none;
+}
+
+
+.products .product .option .check
 {
     position: absolute;
     top: 0;
@@ -3136,11 +3605,11 @@ aside .lk_menu .logout_btn .icon
     border-radius: 50%;
 }
 
-.products .product .option label.radio_btn:after
+.products .product .option .check:before
 {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 4px;
+    left: 4px;
 
     display: block;
 
@@ -3155,7 +3624,7 @@ aside .lk_menu .logout_btn .icon
     background: #3f3f3f;
 }
 
-.products .product .option input:checked + label.radio_btn:after
+.products .product .option input:checked + .check:before
 {
     opacity: 1;
 }
@@ -3859,7 +4328,8 @@ aside .lk_menu .logout_btn .icon
     margin-top: 24px;
 }
 
-.product_info .sizes .title
+
+.product_info .sizes .sizes_btn
 {
     color: #0098ff;
     font-weight: 500;
@@ -5931,6 +6401,12 @@ aside .lk_menu .logout_btn .icon
 }
 
 
+.lk_block.form .edit_btn
+{
+    display: none;
+}
+
+
 .lk_block .logout_btn
 {
     color: #0098ff;
@@ -5960,6 +6436,29 @@ aside .lk_menu .logout_btn .icon
 }
 
 
+.lk_block .save_btn
+{
+    color: #0098ff;
+    font-weight: 500;
+    line-height: 20px;
+
+    display: none;
+
+    margin-left: auto;
+
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.lk_block.form .save_btn
+{
+    display: flex;
+}
+
+
 
 /*---------------
     User info
@@ -5980,6 +6479,11 @@ aside .lk_menu .logout_btn .icon
 .lk_info .user_info .item + .item
 {
     margin-top: 4px;
+    padding-top: 4px;
+
+    transition: border-color .2s linear;
+
+    border-top: 1px solid transparent;
 }
 
 
@@ -5990,11 +6494,31 @@ aside .lk_menu .logout_btn .icon
 
     width: 272px;
     padding-right: 20px;
+
+    align-self: center;
 }
 
 .lk_info .user_info .item .val
 {
     width: calc(100% - 272px);
+}
+
+
+
+.lk_info .user_info.form .item + .item
+{
+    border-color: #ececec;
+}
+
+.lk_info .user_info .item .input,
+.lk_info .user_info.form .item .val span
+{
+    display: none;
+}
+
+.lk_info .user_info.form .item .input
+{
+    display: block;
 }
 
 
@@ -10185,6 +10709,11 @@ footer
     background: #f7f7f7;
 }
 
+footer.padding
+{
+    padding-bottom: 108px;
+}
+
 
 footer .cont
 {
@@ -11025,4 +11554,108 @@ footer .socials .vkontakte_link .icon
     display: inline-block;
 
     vertical-align: top;
+}
+
+
+
+#sizes_modal
+{
+    width: 660px;
+}
+
+
+#sizes_modal .block_head
+{
+    margin-bottom: 20px !important;
+}
+
+
+#sizes_modal table
+{
+    width: 100%;
+
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+#sizes_modal table th
+{
+    color: #a8a7a7;
+    font-size: 14px;
+    font-weight: 400;
+
+    padding: 11px 13px;
+
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    border: 1px solid #dadada;
+}
+
+
+#sizes_modal table td
+{
+    font-size: 14px;
+
+    padding: 11px 13px;
+
+    transition: background .2s linear;
+    text-align: left;
+    vertical-align: middle;
+
+    border: 1px solid #dadada;
+}
+
+#sizes_modal table tbody tr:hover td
+{
+    background: #dcf1ff;
+}
+
+
+#sizes_modal .exp
+{
+    color: #a8a7a7;
+    font-size: 14px;
+
+    margin-top: 16px;
+}
+
+
+
+#confirm_modal
+{
+    width: 420px;
+}
+
+
+#confirm_modal .btns
+{
+    color: #fff;
+    line-height: 28px;
+}
+
+#confirm_modal .btns .btn
+{
+    width: 71px;
+    height: 40px;
+
+    border-radius: 5px;
+}
+
+#confirm_modal .btns .btn + .btn
+{
+    margin-left: 10px;
+}
+
+#confirm_modal .btns .btn.blue
+{
+    background-color: rgb(0, 152, 255);
+}
+
+#confirm_modal .btns .btn.red
+{
+    background-color: #de0e0e;
 }

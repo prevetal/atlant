@@ -70,6 +70,22 @@
     }
 
 
+    .pagination .actions
+    {
+        padding: 16px 20px;
+    }
+
+
+
+    /*----------------
+        Datepicker
+    ----------------*/
+    .air-datepicker
+    {
+        width: 100%;
+    }
+
+
 
     /*------------
         Header
@@ -87,16 +103,38 @@
     }
 
 
+    header .catalog
+    {
+        left: 20px;
+    }
 
-    /*---------------
-        Page head
-    ---------------*/
+
+    header .catalog .mini_modal
+    {
+        max-width: calc(100vw - 40px);
+    }
 
 
+    header .catalog .tabs
+    {
+        padding: 14px;
+    }
 
-    /*----------------
-        Block head
-    ----------------*/
+    header .catalog .tabs .row
+    {
+        margin-left: -8px;
+    }
+
+    header .catalog .tabs .row > *
+    {
+        margin-left: 8px;
+    }
+
+
+    header .catalog .tab_content.active
+    {
+        padding: 20px 14px;
+    }
 
 
 
@@ -347,7 +385,7 @@
 
     .lk_info .filter .form .date .row .field + .field
     {
-        margin-top: 8px;
+        margin-top: 12px;
     }
 
 
@@ -594,6 +632,12 @@
     /*------------
         Footer
     ------------*/
+    footer.padding
+    {
+        padding-bottom: 108px;
+    }
+
+
     footer .cont
     {
         justify-content: space-between;
@@ -639,5 +683,24 @@
     #delivery_method_modal .map_wrap .map
     {
         min-height: 400px;
+    }
+
+
+
+    #sizes_modal table th
+    {
+        font-size: 12px;
+    }
+
+
+    #sizes_modal table td
+    {
+        font-size: 12px;
+    }
+
+
+    #sizes_modal .exp
+    {
+        font-size: 12px;
     }
 }

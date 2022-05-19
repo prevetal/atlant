@@ -67,6 +67,12 @@ $(() => {
 		}])
 	})
 
+	$('body').on('click', '.modal .close_btn', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+	})
+
 	// Увеличение картинки
 	Fancybox.bind('.fancy_img', {
 		Image: {

@@ -45,29 +45,76 @@
     /*------------
         Header
     ------------*/
-    header .catalog_link
+    header .catalog
     {
         position: absolute;
-        bottom: 24px;
+        bottom: 0;
         left: 24px;
+    }
 
+
+    header .catalog .btn
+    {
         width: 40px;
         height: 40px;
         padding: 0;
 
         justify-content: center;
-        order: 3;
     }
 
-    header .catalog_link .icon
+    header .catalog .btn .icon,
+    header .catalog .btn .icon + .icon
     {
         margin: 0;
     }
 
-    header .catalog_link span
+    header .catalog .btn span
     {
         display: none;
     }
+
+
+    header .catalog .mini_modal
+    {
+        left: 0;
+    }
+
+
+    header .catalog .tabs
+    {
+        width: 100%;
+        padding: 16px 20px;
+
+        border-radius: 5px;
+    }
+
+
+    header .catalog .tabs .row
+    {
+        flex-direction: row;
+
+        margin-bottom: -4px;
+        margin-left: -20px;
+    }
+
+    header .catalog .tabs .row > *
+    {
+        margin-bottom: 4px;
+        margin-left: 20px;
+    }
+
+    header .catalog .tabs .row > * + *
+    {
+        margin-top: 0;
+    }
+
+
+    header .catalog .tab_content.active
+    {
+        width: 100%;
+        padding: 20px;
+    }
+
 
 
     header .search

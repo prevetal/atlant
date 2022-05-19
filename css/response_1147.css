@@ -51,6 +51,59 @@
     }
 
 
+    header .catalog .tabs
+    {
+        width: 164px;
+        padding: 20px;
+    }
+
+
+    header .catalog .tab_content.active
+    {
+        width: calc(100% - 164px);
+        padding: 20px;
+    }
+
+
+    header .catalog .tab_content .row
+    {
+        margin-bottom: -36px;
+        margin-left: -41px;
+    }
+
+    header .catalog .tab_content .row > *
+    {
+        width: calc(25% - 41px);
+        margin-bottom: 36px;
+        margin-left: 41px;
+    }
+
+
+    header .catalog .col.border:before
+    {
+        left: -21px;
+    }
+
+
+    header .catalog .main
+    {
+        font-size: 17px;
+
+        margin-bottom: 16px;
+    }
+
+
+    header .catalog .sub > * + *
+    {
+        margin-top: 10px;
+    }
+
+    header .catalog .sub a
+    {
+        font-size: 14px;
+    }
+
+
 
     /*-----------------
         Main slider

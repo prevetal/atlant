@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="css/swiper.css" async>
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/air-datepicker.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1147.css" media="print, (max-width: 1147px)" async>
@@ -146,7 +147,7 @@
 														<div class="field">
 															<div class="prefix">с</div>
 
-															<input type="text" name="" value="" class="input date_input" placeholder="20.02.2021">
+															<input type="text" name="" value="" class="input date_input" placeholder="20.02.2021" data-position="bottom left">
 
 															<svg class="icon"><use xlink:href="images/sprite.svg#ic_calendar"></use></svg>
 														</div>
@@ -154,7 +155,7 @@
 														<div class="field">
 															<div class="prefix">по</div>
 
-															<input type="text" name="" value="" class="input date_input" placeholder="20.02.2021">
+															<input type="text" name="" value="" class="input date_input" placeholder="20.02.2021" data-position="bottom right">
 
 															<svg class="icon"><use xlink:href="images/sprite.svg#ic_calendar"></use></svg>
 														</div>
@@ -289,9 +290,20 @@
 											</div>
 
 											<div class="actions">
-												<div><button class="btn">Массовое редактирование</button></div>
-												<div><button class="btn">Деактивировать</button></div>
-												<div><button class="btn">Удалить</button></div>
+												<div><button class="btn edit_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													<span>Массовое редактирование</span>
+												</button></div>
+
+												<div><button class="btn deactivate_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_deactivate"></use></svg>
+													<span>Деактивировать</span>
+												</button></div>
+
+												<div><button class="btn delete_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+													<span>Удалить</span>
+												</button></div>
 											</div>
 										</div>
 									</div>
@@ -467,9 +479,20 @@
 											</div>
 
 											<div class="actions">
-												<div><button class="btn">Массовое редактирование</button></div>
-												<div><button class="btn">Деактивировать</button></div>
-												<div><button class="btn">Удалить</button></div>
+												<div><button class="btn edit_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													<span>Массовое редактирование</span>
+												</button></div>
+
+												<div><button class="btn deactivate_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_deactivate"></use></svg>
+													<span>Деактивировать</span>
+												</button></div>
+
+												<div><button class="btn delete_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+													<span>Удалить</span>
+												</button></div>
 											</div>
 										</div>
 									</div>
@@ -645,9 +668,20 @@
 											</div>
 
 											<div class="actions">
-												<div><button class="btn">Массовое редактирование</button></div>
-												<div><button class="btn">Деактивировать</button></div>
-												<div><button class="btn">Удалить</button></div>
+												<div><button class="btn edit_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													<span>Массовое редактирование</span>
+												</button></div>
+
+												<div><button class="btn deactivate_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_deactivate"></use></svg>
+													<span>Деактивировать</span>
+												</button></div>
+
+												<div><button class="btn delete_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+													<span>Удалить</span>
+												</button></div>
 											</div>
 										</div>
 									</div>
@@ -659,7 +693,7 @@
 			</div>
 
 
-			<footer>
+			<footer class="padding">
 				<div class="cont row">
 					<div class="links">
 						<div class="title">Покупателям</div>
@@ -1200,6 +1234,7 @@
 		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/sticky-kit.min.js"></script>
 		<script src="js/chart.min.js"></script>
+		<script src="js/air-datepicker.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
