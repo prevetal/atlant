@@ -90,28 +90,33 @@
     /*------------
         Header
     ------------*/
+    header
+    {
+        margin-bottom: 20px;
+        padding: 16px 0;
+    }
+
+
+    header .cont
+    {
+        padding: 0 10px;
+    }
+
+
+
     header .logo,
     header .logo img
     {
+        width: 112px;
         height: 30px;
     }
 
 
-    header .info .links > * + *
+
+    header .catalog .mini_modal,
+    header .catalog .mini_modal.active
     {
-        margin-left: 24px;
-    }
-
-
-    header .catalog
-    {
-        left: 20px;
-    }
-
-
-    header .catalog .mini_modal
-    {
-        max-width: calc(100vw - 40px);
+        max-width: calc(100vw - 20px);
     }
 
 
@@ -134,6 +139,39 @@
     header .catalog .tab_content.active
     {
         padding: 20px 14px;
+    }
+
+
+
+    header .search .btn.active + .mini_modal form
+    {
+        width: calc(100vw - 20px);
+    }
+
+
+
+    header .links > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    header .links .account_link .icon svg
+    {
+        width: 20px;
+        height: 23px;
+    }
+
+    header .links .orders_link .icon svg
+    {
+        width: 19px;
+        height: 21px;
+    }
+
+    header .links .cart_link .icon svg
+    {
+        width: 18px;
+        height: 22px;
     }
 
 

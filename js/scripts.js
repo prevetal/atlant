@@ -578,6 +578,22 @@ $(() => {
 			})
 		})
 	}
+
+
+	// Поиск
+	$('.search .input').keyup(function() {
+		let _self = $(this)
+
+		_self.val().length
+			? _self.addClass('active')
+			: _self.removeClass('active')
+	})
+
+	$('.search .clear_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.search .input').val('').removeClass('active').focus()
+	})
 })
 
 

@@ -39,13 +39,14 @@
     /*------------
         Header
     ------------*/
-    header .info
+    header
     {
+        margin-bottom: 24px;
         padding: 24px 0;
     }
 
 
-    header .info .links > * + *
+    header .links > * + *
     {
         margin-left: 16px;
     }
@@ -101,6 +102,13 @@
     header .catalog .sub a
     {
         font-size: 14px;
+    }
+
+
+
+    header .search .btn.active + .mini_modal form
+    {
+        width: calc(100vw - 408px);
     }
 
 

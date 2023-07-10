@@ -1031,48 +1031,23 @@ button
 ------------*/
 header
 {
+    color: #fff;
+
     position: relative;
     z-index: 9;
     top: 0;
     left: 0;
 
     width: 100%;
-}
-
-header.margin
-{
-    margin-bottom: 32px;
-}
-
-
-
-header .top
-{
-    color: #fff;
-    font-size: 14px;
-    line-height: 40px;
-
-    background: #3f3f3f;
-}
-
-header .top .cont
-{
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-}
-
-
-
-header .info
-{
+    margin-bottom: 40px;
     padding: 30px 0;
+
+    background: #002b52;
 }
 
-header .info .cont
-{
-    position: relative;
 
+header .cont
+{
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -1080,98 +1055,33 @@ header .info .cont
 
 
 
-header .location
-{
-    display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-header .location .icon
-{
-    color: #0098ff;
-
-    display: block;
-
-    width: 13px;
-    height: 15px;
-    margin-right: 9px;
-}
-
-
-
-header .top .links
-{
-    display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-header .top .links > * + *
-{
-    margin-left: 24px;
-}
-
-header .top .links a
+header .logo
 {
     color: currentColor;
 
-    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-    vertical-align: top;
+    display: block;
+
+    width: 149px;
+    height: 40px;
+    margin: auto;
+
     text-decoration: none;
 }
 
-
-
-header .logout_btn
-{
-    color: #fff;
-    line-height: 28px;
-
-    display: flex;
-
-    margin-left: auto;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-header .logout_btn .icon
-{
-    display: block;
-
-    width: 15px;
-    height: 14px;
-    margin-left: 10px;
-}
-
-
-
-header .logo,
 header .logo img
 {
-    color: currentColor;
-
     display: block;
 
-    text-decoration: none;
+    width: 149px;
+    height: 40px;
 }
 
-
-
-header .catalog
-{
-    position: static;
-}
 
 
 header .catalog .btn
@@ -1186,7 +1096,7 @@ header .catalog .btn
     text-decoration: none;
 
     border-radius: 5px;
-    background-color: rgb(0, 152, 255);
+    background-color: #30516e;
 
     justify-content: flex-start;
     align-items: center;
@@ -1225,10 +1135,19 @@ header .catalog .btn.active .icon + .icon
 }
 
 
-header .catalog .mini_modal
+header .catalog .btn.active
 {
-    top: calc(100% + 44px);
-    left: 24px;
+    background: #0098ff;
+}
+
+
+header .catalog .mini_modal,
+header .catalog .mini_modal.active
+{
+    color: var(--text_color);
+
+    top: calc(100% + 10px);
+    left: 0;
 
     width: 1100px;
     max-width: calc(100vw - 48px);
@@ -1236,11 +1155,6 @@ header .catalog .mini_modal
     border-radius: 5px;
     background-color: rgb(220, 241, 255);
     box-shadow: 0 0 10px 0 rgba(154, 214, 255, .5);
-}
-
-header .catalog .mini_modal.active
-{
-    top: calc(100% + 20px);
 }
 
 
@@ -1394,33 +1308,81 @@ header .catalog .sub a.active
 
 header .search
 {
-    width: calc(100% - 580px);
+    margin-left: 10px;
 }
 
-header .search form
+
+header .search .btn
 {
+    color: #fff;
+
     display: flex;
 
-    justify-content: flex-start;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 5px;
+    background-color: #30516e;
+
+    justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
 }
 
+header .search .btn .icon
+{
+    display: block;
+
+    width: 15px;
+    height: 15px;
+}
+
+
+header .search .mini_modal
+{
+    top: 0;
+    left: 0;
+}
+
+
+header .search form
+{
+    position: relative;
+
+    width: 40px;
+
+    transition: width .2s linear;
+}
+
+header .search .btn.active + .mini_modal form
+{
+    width: 730px;
+}
+
+
 header .search ::-webkit-input-placeholder
 {
-    color: #a8a8a8;
+    color: #96aabc;
 }
 
 header .search :-moz-placeholder
 {
-    color: #a8a8a8;
+    color: #96aabc;
+}
+
+header .search ::-moz-placeholder
+{
+    color: #96aabc;
+
+    opacity: 1;
 }
 
 header .search :-ms-input-placeholder
 {
-    color: #a8a8a8;
+    color: #96aabc;
 }
+
 
 header .search .input
 {
@@ -1432,22 +1394,74 @@ header .search .input
 
     width: 100%;
     height: 40px;
-    padding: 0 53px 0 14px;
+    padding: 0 112px 0 16px;
 
-    border: 1px solid #dadada;
+    transition: background .2s linear;
+
+    border: none;
     border-radius: 5px;
-    background: none;
+    background: #30516e;
 }
+
+
+header .search .input:hover,
+header .search .input:focus,
+header .search .input.active
+{
+    background: #fff;
+}
+
+
+header .search .clear_btn
+{
+    color: var(--text_color);
+
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 40px;
+
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    transition: color .2s linear;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .search .clear_btn .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+}
+
+
+header .search .input.active ~ .clear_btn
+{
+    display: flex;
+}
+
 
 header .search .submit_btn
 {
     color: #fff;
 
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+
     display: flex;
 
     width: 40px;
     height: 40px;
-    margin-left: -40px;
 
     border-radius: 5px;
     background-color: rgb(0, 152, 255);
@@ -1468,11 +1482,11 @@ header .search .submit_btn .icon
 
 
 
-header .info .links
+header .links
 {
     display: flex;
 
-    margin-top: -6px;
+    margin-left: auto;
 
     justify-content: flex-start;
     align-items: flex-start;
@@ -1480,15 +1494,15 @@ header .info .links
     flex-wrap: wrap;
 }
 
-header .info .links > * + *
+header .links > * + *
 {
     margin-left: 17px;
 }
 
 
-header .info .links .link
+header .links .link
 {
-    color: #0098ff;
+    color: currentColor;
     font-size: 14px;
 
     text-align: center;
@@ -1496,7 +1510,7 @@ header .info .links .link
 }
 
 
-header .info .links .icon
+header .links .icon
 {
     position: relative;
 
@@ -1512,45 +1526,24 @@ header .info .links .icon
 }
 
 
-header .info .links .icon .count
-{
-    color: var(--text_color);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-
-    width: 21px;
-    height: 21px;
-
-    text-align: center;
-
-    border-radius: 50%;
-    background: #f8bb01;
-}
-
-
-header .info .links .icon svg
+header .links .icon svg
 {
     display: block;
 }
 
-header .info .links .account_link .icon svg
+header .links .account_link .icon svg
 {
     width: 23px;
     height: 27px;
 }
 
-header .info .links .orders_link .icon svg
+header .links .orders_link .icon svg
 {
     width: 20px;
     height: 21px;
 }
 
-header .info .links .cart_link .icon svg
+header .links .cart_link .icon svg
 {
     width: 20px;
     height: 24px;
@@ -3760,7 +3753,7 @@ aside .lk_menu .logout_btn .icon
 
 .categories .category:hover
 {
-    background-color: #3f3f3f;
+    background-color: #002b52;
 }
 
 

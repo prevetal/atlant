@@ -45,41 +45,6 @@
     /*------------
         Header
     ------------*/
-    header .catalog
-    {
-        position: absolute;
-        bottom: 0;
-        left: 24px;
-    }
-
-
-    header .catalog .btn
-    {
-        width: 40px;
-        height: 40px;
-        padding: 0;
-
-        justify-content: center;
-    }
-
-    header .catalog .btn .icon,
-    header .catalog .btn .icon + .icon
-    {
-        margin: 0;
-    }
-
-    header .catalog .btn span
-    {
-        display: none;
-    }
-
-
-    header .catalog .mini_modal
-    {
-        left: 0;
-    }
-
-
     header .catalog .tabs
     {
         width: 100%;
@@ -117,23 +82,15 @@
 
 
 
-    header .search
-    {
-        width: 100%;
-        margin-top: 16px;
-
-        order: 3;
-    }
-
-    header .search .input
-    {
-        padding-left: 53px;
-    }
-
-
-    header .info .links > * + *
+    header .links > * + *
     {
         margin-left: 20px;
+    }
+
+
+    header .links .link
+    {
+        font-size: 13px;
     }
 
 

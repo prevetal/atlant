@@ -73,35 +73,60 @@
     /*------------
         Header
     ------------*/
-    header.margin
-    {
-        margin-bottom: 20px;
-    }
-
-
-    header .top
-    {
-        display: none;
-    }
-
-
-    header .info
+    header
     {
         padding: 16px 0 20px;
     }
 
 
-    header .info .links
+
+    header .logo,
+    header .logo img
+    {
+        width: 130px;
+        height: 35px;
+    }
+
+
+
+    header .links
     {
         margin-top: 0;
     }
 
-    header .info .links > * + *
+    header .links > * + *
     {
-        margin-left: 28px;
+        margin-left: 24px;
     }
 
-    header .info .links .link span
+    header .links .link span
+    {
+        display: none;
+    }
+
+    header .links .icon
+    {
+        margin: 0;
+    }
+
+
+
+    header .catalog .btn
+    {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+
+        justify-content: center;
+    }
+
+    header .catalog .btn .icon,
+    header .catalog .btn .icon + .icon
+    {
+        margin: 0;
+    }
+
+    header .catalog .btn span
     {
         display: none;
     }
@@ -118,6 +143,18 @@
         font-size: 16px;
 
         margin-bottom: 12px;
+    }
+
+
+
+    header .search .mini_modal
+    {
+        left: -50px;
+    }
+
+    header .search .btn.active + .mini_modal form
+    {
+        width: calc(100vw - 48px);
     }
 
 
