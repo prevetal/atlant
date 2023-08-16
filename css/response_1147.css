@@ -42,6 +42,11 @@
     header
     {
         margin-bottom: 24px;
+    }
+
+
+    header .info
+    {
         padding: 24px 0;
     }
 

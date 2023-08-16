@@ -93,6 +93,11 @@
     header
     {
         margin-bottom: 20px;
+    }
+
+
+    header .info
+    {
         padding: 16px 0;
     }
 
@@ -100,6 +105,12 @@
     header .cont
     {
         padding: 0 10px;
+    }
+
+
+    header .btns > * + *
+    {
+        margin-left: 16px;
     }
 
 

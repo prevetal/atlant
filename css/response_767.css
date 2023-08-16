@@ -73,9 +73,24 @@
     /*------------
         Header
     ------------*/
-    header
+    header .top
+    {
+        font-size: 13px;
+    }
+
+
+    header .info
     {
         padding: 16px 0 20px;
+    }
+
+
+    header .langs a
+    {
+        line-height: 28px;
+
+        width: 28px;
+        height: 28px;
     }
 
 

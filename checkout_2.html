@@ -46,22 +46,24 @@
 				<header>
 					<div class="top">
 						<div class="cont row">
-							<div class="location">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
-								<span>Новосибирск</span>
+							<div class="langs">
+								<div><a class="active">RU</a></div>
+								<div><a href="/">EN</a></div>
 							</div>
 
-							<div class="links">
-								<div><a href="/">Стать продавцом</a></div>
+							<div class="btns">
+								<div><button class="btn">Стать продавцом</button></div>
+								<div><button class="btn">Заказать звонок</button></div>
 							</div>
 						</div>
 					</div>
 
+
 					<div class="info">
 						<div class="cont row">
-							<a href="/" class="logo">
-								<img src="images/logo.png" alt="">
-							</a>
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+							</div>
 
 							<div class="catalog modal_cont">
 								<button class="btn mini_modal_btn">
@@ -183,14 +185,24 @@
 								</div>
 							</div>
 
-							<div class="search">
-								<form action="">
-									<input type="text" name="" value="" class="input" placeholder="Например, бронзер">
+							<div class="search modal_cont">
+								<button class="btn mini_modal_btn" data-modal-id="#search_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
 
-									<button type="submit" class="submit_btn">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
-									</button>
-								</form>
+								<div class="mini_modal" id="search_modal">
+									<form action="">
+										<input type="text" name="" value="" class="input" placeholder="Например, бронзер">
+
+										<button type="button" class="clear_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+										</button>
+
+										<button type="submit" class="submit_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+										</button>
+									</form>
+								</div>
 							</div>
 
 							<div class="links">
@@ -211,44 +223,10 @@
 								<div><a href="/" class="cart_link link">
 									<div class="icon">
 										<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-										<div class="count">2</div>
 									</div>
 									<span>Корзина</span>
 								</a></div>
 							</div>
-						</div>
-					</div>
-
-
-					<div class="bottom">
-						<div class="cont">
-							<nav class="menu row">
-								<div class="item">
-									<a href="/" class="sub_link">
-										<span class="arr"></span>
-									</a>
-
-									<div class="sub_menu">
-										<div><a href="/"></a></div>
-									</div>
-								</div>
-
-								<div class="item">
-									<a href="/"></a>
-								</div>
-
-								<div class="item">
-									<a href="/"></a>
-								</div>
-
-								<div class="item">
-									<a href="/"></a>
-								</div>
-
-								<div class="item">
-									<a href="/"></a>
-								</div>
-							</nav>
 						</div>
 					</div>
 				</header>

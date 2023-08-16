@@ -1031,8 +1031,6 @@ button
 ------------*/
 header
 {
-    color: #fff;
-
     position: relative;
     z-index: 9;
     top: 0;
@@ -1040,6 +1038,28 @@ header
 
     width: 100%;
     margin-bottom: 40px;
+}
+
+
+header .top
+{
+    color: #b2c4d4;
+    font-size: 14px;
+
+    position: relative;
+
+    padding: 5px 0;
+
+    background: #30516e;
+}
+
+
+header .info
+{
+    color: #fff;
+
+    position: relative;
+
     padding: 30px 0;
 
     background: #002b52;
@@ -1051,6 +1071,115 @@ header .cont
     justify-content: space-between;
     align-items: center;
     align-content: center;
+}
+
+
+
+header .langs
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+header .langs > * + *
+{
+    margin-left: 1px;
+}
+
+
+header .langs a
+{
+    color: currentColor;
+    line-height: 30px;
+
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    transition: background .2s linear;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+
+header .langs a:hover,
+header .langs a.active
+{
+    background: rgb(0, 43, 82);
+}
+
+
+
+header .btns
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+header .btns > * + *
+{
+    margin-left: 20px;
+}
+
+
+header .btns .btn
+{
+    line-height: 28px;
+
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+}
+
+
+header .btns .btn:hover,
+header .btns .btn.active
+{
+    color: #fff;
+}
+
+
+
+header .logout_btn
+{
+    display: flex;
+
+    transition: color .2s linear;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .logout_btn .icon
+{
+    display: block;
+
+    width: 15px;
+    height: 14px;
+    margin-left: 8px;
+}
+
+
+header .logout_btn:hover
+{
+    color: #fff;
 }
 
 
@@ -1504,6 +1633,8 @@ header .links .link
 {
     color: currentColor;
     font-size: 14px;
+
+    display: block;
 
     text-align: center;
     text-decoration: none;
